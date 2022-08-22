@@ -20,7 +20,8 @@ import logging
 
 settings = get_project_settings()
 db_name = settings.get("DATABASE_NAME", "database")
-dir = Path("../database")
+
+dir = Path(__file__).parent.joinpath("../database")
 dir.mkdir(exist_ok=True)
 db_path = dir.joinpath(db_name + ".sqlite")
 
