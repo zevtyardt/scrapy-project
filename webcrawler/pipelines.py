@@ -12,6 +12,7 @@ from urllib.parse import unquote
 from pathlib import Path
 import re
 import attr
+import sys
 
 from scrapy.utils.project import get_project_settings
 from scrapy.exceptions import DropItem
@@ -93,9 +94,12 @@ class database:
 
 class ProcessPipeline:
     def __init__(self):
-        self.db = database()
+        self.db = None if "-o" in sys.argv or "--output" in sys.argv else database()
 
     def process_item(self, item, spider):
+        if not self.db:
+            return item
+
         name = spider.name
         if self.db.exists(name, title=item["title"]):
             logging.warning(f"{item['title']} already exists!")
@@ -108,4 +112,3 @@ class ProcessPipeline:
                 logging.info(f"{item['title']} added to database")
             except Exception:
                 self.db.rollback()
-                raise
