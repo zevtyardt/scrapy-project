@@ -1,6 +1,4 @@
 import scrapy
-import re
-
 
 class KusonimeSpider(scrapy.Spider):
     name = 'kusonime'
@@ -11,9 +9,9 @@ class KusonimeSpider(scrapy.Spider):
         for i in response.css(".episodeye a::attr(href)"):
             yield scrapy.Request(url=i.get(), callback=self.parse_content)
 
-        next_page = response.css("link[rel='next']::attr(href)")
-        if next_page:
-            yield scrapy.Request(url=next_page.get())
+#        next_page = response.css("link[rel='next']::attr(href)")
+ #       if next_page:
+  #          yield scrapy.Request(url=next_page.get())
 
     def parse_content(self, response):
         item = {
@@ -36,4 +34,18 @@ class KusonimeSpider(scrapy.Spider):
             item[k.strip()] = v.strip(": ")
         item["sinopsis"] = response.css(".clear ~ p::text").get().strip()
 
+        downloads = []
+        for ddl in response.css(".smokeddl"):
+            name = ddl.css(".smokettl::text").get()
+            if not name:
+                continue
+
+            data = {}
+            for smokeurl in ddl.css(".smokeurl"):
+                data["resolution"] = smokeurl.css("strong::text").get()
+                data["url"] = smokeurl.css("a::attr(href)").extract()
+            downloads.append({
+               "name": name,
+               "link": data})
+        item["download_data"] = downloads
         yield item
