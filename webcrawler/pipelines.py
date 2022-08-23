@@ -150,6 +150,7 @@ class ProcessPipeline:
     def process_item(self, item, spider):
         item = self.to_safe_name(item)
         if not self.db:
+            logging.info(f"{item['title']!r} crawled")
             return item
 
         name = spider.name
