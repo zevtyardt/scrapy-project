@@ -1,7 +1,7 @@
 
 
 ## Kusonime
-| id | title | url | genre | japanese | seasons | producers | type | status | total_episode | score | duration | released_on | sinopsis |
+| id | title | url | genre | japanese | seasons | producers | type | status | total___episode | score | duration | released___on | sinopsis |
 |+++|+++|+++|+++|+++|+++|+++|+++|+++|+++|+++|+++|+++|+++|
 | 1 | Xiao Mo Tou Baolu La! (Busted! Darklord) | https://kusonime.com/xiao-mo-tou-baolu-la-batch-subtitle-indonesia/ | Comedy, Anime ONA | 小魔头暴露啦！ | Anime ONA | N/A | ONA | Completed | 26 | 6.38 | 8 min. per ep. | Jan 15, 2022 | Dalam upaya untuk bertahan hidup, Yu Renjie, putra raja iblis, diperintahkan untuk memasuki Akademi Pahlawan yang hanya merekrut murid-murid yang terhormat dan jujur. Tujuannya adalah untuk mendapatkan Sertifikat Pahlawan yang dapat membawa legitimasi ke klan iblis. Ini sangat berbahaya. Begitu identitas seorang pemuja iblis terungkap, ksatria yang tak terhitung jumlahnya akan membunuh mereka di tempat. |
 | 2 | TENSURA : Sukuwareru Ramiris | https://kusonime.com/sukuwareru-ramiris-batch-subtitle-indonesia/ | Comedy, Fantasy, Anime ONA | 救われるラミリス | Anime ONA | N/A | ONA | Completed | 2 | 6.18 | 2 min. per ep. | Mar 19, 2022 | Episode spesial melalui streaming youtube yang dapat region lock JP only. Ceritanya sendiri sesuai dengan judulnya, menceritakan Ramiris dalam memandu orang-orang di dalam labirin. |
