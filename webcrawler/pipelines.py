@@ -44,8 +44,7 @@ class database:
         Session = sessionmaker(self.engine)
         self.session = Session()
 
-        self.column_keys = ["id"]
-
+        self.column_keys = None
 
     def get_type_column(self, v):
         if isinstance(v, bool):
@@ -68,7 +67,6 @@ class database:
             columns.append(
                 sa.Column(k.lower(), self.get_type_column(v), unique=k.lower() == "title")
             )
-            self.column_keys.append(k.lower())
 
         metadata = {
             "id": attr.ib(init=False)}
@@ -101,19 +99,23 @@ class database:
         if not self.table.get(name):
             self.update_table(name, data_dict)
 
+        if not self.column_keys:
+            self.column_keys = list(self.table[name].__table__.columns.keys())
+
         need_update = False
         for k, v in copy.copy(data_dict).items():
             if isinstance(v, list):
-                data_dict[k] = ", ".join(v)
+                data_dict[k] = ", ".join(map(str, v))
             elif isinstance(v, dict):
                 data_dict[k] = str(v)
 
-            if k.lower() not in self.column_keys:
+            if self.column_keys and k.lower() not in self.column_keys:
                 self.add_column(name,
                                 sa.Column(k.lower(),
                                           self.get_type_column(k))
                                 )
                 need_update = True
+                self.column_keys = None
 
         if need_update:
             self.update_table(name, data_dict)
