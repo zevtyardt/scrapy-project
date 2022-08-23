@@ -1,4 +1,5 @@
 import scrapy
+import re
 
 
 class KusonimeSpider(scrapy.Spider):
@@ -15,4 +16,24 @@ class KusonimeSpider(scrapy.Spider):
             yield scrapy.Request(url=next_page.get())
 
     def parse_content(self, response):
-        yield {"title": response.css("title::text").get().split(" |")[0]}
+        item = {
+            "title": (
+              response.css(".clear ~ p strong::text").get() or \
+              response.css(".wp-post-image::attr(title)").get()
+            ).strip(),
+            "url": response.url,
+            "genre": response.css("a[rel='tag']::text").extract(),
+        }
+
+        for info in response.css(".info p"):
+            data = info.css("::text").getall()
+            if data[0].strip() == "Genre": continue
+
+            if len(data) > 2:
+                k, v = data[0], data[-1]
+            else:
+                k, v = data
+            item[k.strip()] = v.strip(": ")
+        item["sinopsis"] = response.css(".clear ~ p::text").get().strip()
+
+        yield item
