@@ -9,9 +9,9 @@ class KusonimeSpider(scrapy.Spider):
         for i in response.css(".episodeye a::attr(href)"):
             yield scrapy.Request(url=i.get(), callback=self.parse_content)
 
-#        next_page = response.css("link[rel='next']::attr(href)")
- #       if next_page:
-  #          yield scrapy.Request(url=next_page.get())
+        next_page = response.css("link[rel='next']::attr(href)")
+        if next_page:
+            yield scrapy.Request(url=next_page.get())
 
     def parse_content(self, response):
         item = {
