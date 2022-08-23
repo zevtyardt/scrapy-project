@@ -27,5 +27,6 @@ if db.is_file():
         md += f"### {db_name[0].title()}\n"
         md += table
 
-with open("README.md", "w") as fp:
-    fp.write(md)
+if md:
+    with open("README.md", "w") as fp:
+        fp.write(md)
