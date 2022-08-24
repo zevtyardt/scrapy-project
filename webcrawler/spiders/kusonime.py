@@ -21,6 +21,7 @@ class KusonimeSpider(scrapy.Spider):
             ).strip(),
             "url": response.url,
             "genre": response.css("a[rel='tag']::text").extract(),
+            "thumbnail": response.css(".wp-post-image::attr(src)").get()
         }
 
         for info in response.css(".info p"):
