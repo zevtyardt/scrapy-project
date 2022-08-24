@@ -33,7 +33,7 @@ if db.is_file():
             table += convert(columns)
             table += convert(("---" for i in columns), _=True)
             for item in data:
-                table += convert(map(lambda x: textwrap.shorten(str(x), 50), item))
+                table += convert(map(lambda x: textwrap.shorten(str(x) if x else "", 50), item))
             table += "\n   _and more.._\n\n"
 
         md += f"1. **{':'.join(db_name[0].split('_'))}**\n"
