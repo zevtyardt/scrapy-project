@@ -141,6 +141,7 @@ class database:
 class ProcessPipeline:
     def __init__(self):
         self.db = None if "-o" in sys.argv or "--output" in sys.argv else database()
+        self.names = {}
 
     def to_safe_name(self, item):
         return {
@@ -148,12 +149,20 @@ class ProcessPipeline:
         }
 
     def process_item(self, item, spider):
+        if not item:
+            return
+
         item = self.to_safe_name(item)
         if not self.db:
             logging.info(f"{item['title']!r} crawled")
             return item
 
         name = spider.name
+        if not self.names.get(name):
+            clsname = spider.__class__.__name__
+            self.names[name] = clsname[0] + re.sub(r"[A-Z]", lambda x: "_" + x[0], clsname[1:-6])
+
+        name = self.names[name]
         if self.db.exists(name, title=item["title"]):
             logging.warning(f"{item['title']!r} already exists!")
         else:
