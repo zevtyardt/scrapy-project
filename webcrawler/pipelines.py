@@ -20,6 +20,7 @@ import sys
 import copy
 import logging
 import difflib
+import time
 
 from scrapy.utils.project import get_project_settings
 from scrapy.exceptions import DropItem
@@ -88,9 +89,9 @@ class database:
             sa.Column("id", sa.Integer(), primary_key=True)], {
             "id": attr.ib(init=False)}
         for k, v in data_dict.items():
-            if k == "id":
-                continue
             name = self.safe_name(k)
+            if name == "id":
+                continue
 
             v_type = self.get_column_type(v)
             columns.append(sa.Column(
@@ -99,16 +100,20 @@ class database:
 
         # extend data
         for k, v in self.columns[dbname].items():
-            if k not in columns:
+            if k not in metadata:
                  columns.append(v)
                  metadata[k] = attr.ib(default=v.type.python_type())
+
+        # update self.columns
+        for col in columns:
+            self.columns[dbname][col.name] = col
 
         self.table[dbname] = self.create_new_table(dbname, columns, metadata)
 
     def add_column(self, table_name, column):
         column_name = column.compile(dialect=self.engine.dialect)
         column_type = column.type.compile(self.engine.dialect)
-        self.engine.execute('ALTER TABLE %s ADD COLUMN %s %s NULL' %
+        self.engine.execute('ALTER TABLE %s ADD COLUMN %s %s' %
                             (table_name, column_name, column_type))
         logging.info(f"add new column: '{column_name}' type {column_type!r}")
 
@@ -140,10 +145,11 @@ class database:
         table = self.table[dbname]
 
         # rename similar key based on table column and filter none value
-        columns, force_update = list(table.__table__.columns.keys()), False
+        columns, force_update = list(set(sorted(table.__table__.columns.keys()))), False
         for k, v in copy.copy(data_dict).items():
             if not v:
                 continue
+
             if isinstance(v, list):
                 data_dict[k] = ", ".join(map(str, v))
             elif isinstance(v, dict):
@@ -152,7 +158,7 @@ class database:
             sk = self.safe_name(k)
             similar = difflib.get_close_matches(sk, columns)
 
-            if len(similar) > 0 and difflib.SequenceMatcher(None, sk, similar[0]).ratio() > 0.7:
+            if len(similar) > 0:
                 sk, v = similar[0], data_dict.pop(k)
                 data_dict[sk] = v
 
@@ -163,11 +169,9 @@ class database:
 
         if force_update:
             self.create_table_from_data(dbname, data_dict)
-            self.update_database()
             table = self.table[dbname]
 
         self.session.add(table(**data_dict))
-        self.session.commit()
 
 class ProcessPipeline:
     def __init__(self):
@@ -197,9 +201,9 @@ class ProcessPipeline:
                 if item.get('url'):
                     item["url"] = unquote(item["url"])
                 self.db.add(name, item)
+                self.db.commit()
                 logging.info(f"{item['title']!r}: added to database")
             except Exception as e:
                 self.db.rollback()
                 logging.error(
-                    f"{item['title']!r}: failed added to database")
-                raise
+                    f"{item['title']!r}: failed added to database\n{e}")
