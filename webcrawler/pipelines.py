@@ -108,7 +108,7 @@ class database:
     def add_column(self, table_name, column):
         column_name = column.compile(dialect=self.engine.dialect)
         column_type = column.type.compile(self.engine.dialect)
-        self.engine.execute('ALTER TABLE %s ADD COLUMN %s %s' %
+        self.engine.execute('ALTER TABLE %s ADD COLUMN %s %s NULL' %
                             (table_name, column_name, column_type))
         logging.info(f"add new column: '{column_name}' type {column_type!r}")
 
@@ -139,9 +139,11 @@ class database:
 
         table = self.table[dbname]
 
-        # rename similar key based on table column
+        # rename similar key based on table column and filter none value
         columns, force_update = list(table.__table__.columns.keys()), False
         for k, v in copy.copy(data_dict).items():
+            if not v:
+                continue
             if isinstance(v, list):
                 data_dict[k] = ", ".join(map(str, v))
             elif isinstance(v, dict):
@@ -150,7 +152,7 @@ class database:
             sk = self.safe_name(k)
             similar = difflib.get_close_matches(sk, columns)
 
-            if len(similar) > 0 and difflib.SequenceMatcher(None, sk, similar[0]).ratio() > 0.8:
+            if len(similar) > 0 and difflib.SequenceMatcher(None, sk, similar[0]).ratio() > 0.7:
                 sk, v = similar[0], data_dict.pop(k)
                 data_dict[sk] = v
 
