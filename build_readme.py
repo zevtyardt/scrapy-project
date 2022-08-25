@@ -52,8 +52,8 @@ if db.is_file():
 
         cls = get_cls(db_name[0])
 
-        md += f"1. **{''.join(db_name[0].split('_'))}**</br>\n"
-        for col in (['   ', '   '],
+        md += f"1. **{':'.join(db_name[0].split('_'))}**</br>\n"
+        for col in (['info', ''],
                     ['---', '---'],
                     ['spider name', cls.name],
                     ['source', cls.start_urls[0]]):
@@ -61,7 +61,7 @@ if db.is_file():
 
         md += "\n"
         md += "   <details>\n"
-        md += f"     <summary><i>output example</i></summary>\n\n"
+        md += f"     <summary><i>output example:</i></summary>\n\n</br>\n"
         md += table
         md += "   </details>\n\n"
 
