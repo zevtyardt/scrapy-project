@@ -36,8 +36,10 @@ if db.is_file():
                 table += convert(map(lambda x: textwrap.shorten(str(x) if x else "", 50), item))
             table += "\n   _and more.._\n\n"
 
-        md += f"1. **{':'.join(db_name[0].split('_'))}**\n"
+        md += "<details>\n"
+        md += f"  <summary><b>{':'.join(db_name[0].split('_'))}</b></summary>\n\n"
         md += table
+        md += "</details>\n"
 
 if md:
     with open("README.md", "w") as fp:
