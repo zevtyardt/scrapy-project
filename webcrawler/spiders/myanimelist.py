@@ -12,7 +12,6 @@ class MyanimelistAnimeSpider(scrapy.Spider):
             href = tr.css("a::attr(href)").get()
             if href:
                 yield scrapy.Request(url=href, callback=self.parse_item)
-        return
 
         next_page = response.css("a.next::attr(href)").get()
         if next_page:
