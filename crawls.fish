@@ -1,3 +1,3 @@
-for i in $argv
-    timeout -s SIGINT 5 scrapy crawl $i
+for i in (scrapy list | grep -v "^[ I]")
+    timeout -s SIGINT 10 scrapy crawl $i
 end
