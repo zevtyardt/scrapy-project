@@ -12,7 +12,7 @@ see: [requirements.txt](/requirements.txt)
 ## List Crawlers:
 1. **kusonime**</br>
    | info |  |
-   |:---:|:---:|
+   |---|---|
    | spider name | kusonime |
    | source | http://kusonime.com/ |
 
@@ -22,7 +22,7 @@ see: [requirements.txt](/requirements.txt)
       </br>
 
       | id | title | url | genre | thumbnail | japanese | seasons | producers | type | status | total_episode | score | duration | released_on | sinopsis | download_data |
-      |:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|
+      |---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|
       | 1 | Hanabi-chan wa Okuregachi | https://kusonime.com/hanabichan-batch- [...] | [ "Comedy", "Spring 2022" ] | https://kusonime.com/wp- [...] | ハナビちゃんは遅れがち | Spring 2022 | N/A | TV Series | Ongoing | ? | 6.12 | 4 min. per ep. | Jul 10, 2022 | Musashi Shinonome, manajer baru yang akan [...] | [ { "name": "Download Hanabi-chan wa [...] |
       | 2 | Gaikotsu Kishi-sama Tadaima Isekai e Odekakechuu | https://kusonime.com/skeleton-knight-batch- [...] | [ "Action", "Fantasy", "Spring 2022" ] | https://kusonime.com/wp- [...] | 骸骨騎士様、只今異世界へお出掛け中 | Spring 2022 | Pony Canyon, AT-X, DAX Production, Docomo [...] | BD | Completed | 12 | 7.31 | 23 min. per ep. | Apr 07, 2022 | selain Ainz-sama ada juga tengkorak [...] | [ { "name": "Download Gaikotsu Kishi-sama [...] |
       | 3 | Xiao Mo Tou Baolu La! (Busted! Darklord) | https://kusonime.com/xiao-mo-tou-baolu-la- [...] | [ "Comedy", "Anime ONA" ] | https://kusonime.com/wp- [...] | 小魔头暴露啦！ | Anime ONA | N/A | ONA | Completed | 26 | 6.38 | 8 min. per ep. | Jan 15, 2022 | Dalam upaya untuk bertahan hidup, Yu Renjie, [...] | [ { "name": "Download Xiao Mo Tou Baolu La! [...] |
@@ -35,7 +35,7 @@ see: [requirements.txt](/requirements.txt)
 
 1. **myanimelist:anime**</br>
    | info |  |
-   |:---:|:---:|
+   |---|---|
    | spider name | mal:anime |
    | source | https://myanimelist.net/topanime.php |
 
@@ -45,7 +45,7 @@ see: [requirements.txt](/requirements.txt)
       </br>
 
       | id | title | url | synonyms | japanese | german | spanish | french | type | episodes | status | aired | premiered | broadcast | producers | licensors | studios | source | genres | demographic | duration | rating | score | ranked | popularity | members | favorites | synopsis | themes |
-      |:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|
+      |---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|
       | 1 | Hunter x Hunter | [...] | HxH (2011) | HUNTER×HUNTER（ハンター×ハンター） | Hunter x Hunter | Hunter x Hunter | Hunter X Hunter | TV | 148 | Finished Airing | Oct 2, 2011 to Sep 24, 2014 | Fall 2011 | Sundays at 10:55 (JST) | [ "Nippon Television Network", "Shueisha", "VAP" ] | VIZ Media | Madhouse | Manga | [ "Action", "Adventure", "Fantasy" ] | [ "Shounen" ] | 23 min. per ep. | PG-13 - Teens 13 or older | 9.04 | #9 | #10 | 2,446,844 | 187,345 | Hunters devote themselves to accomplishing [...] |  |
       | 2 | Gintama: The Very Final | [...] |  | 銀魂 THE FINAL | N/A |  |  | Movie | 1 | Finished Airing | Jan 8, 2021 |  |  | [ "TV Tokyo", "Warner Bros. Japan" ] | Eleven Arts | Bandai Namco Pictures | Manga | [ "Action", "Comedy", "Drama", "Sci-Fi" ] | [ "Shounen" ] | 1 hr. 44 min. | PG-13 - Teens 13 or older | 9.05 | #7 | #1652 | 110,801 | 3,723 | Two years have passed following the [...] | [ "Gag Humor", "Historical", "Parody", "Samurai" ] |
       | 3 | Fullmetal Alchemist: Brotherhood | [...] | Hagane no Renkinjutsushi: Fullmetal [...] | 鋼の錬金術師 FULLMETAL ALCHEMIST |  |  | Fullmetal Alchemist Brotherhood | TV | 64 | Finished Airing | Apr 5, 2009 to Jul 4, 2010 | Spring 2009 | Sundays at 17:00 (JST) | [ "Aniplex", "Mainichi Broadcasting System", [...] | [ "Aniplex of America", "Funimation" ] | Bones | Manga | [ "Action", "Adventure", "Drama", "Fantasy" ] | [ "Shounen" ] | 24 min. per ep. | R - 17+ (violence & profanity) | 9.13 | #1 | #3 | 2,962,116 | 206,616 | After a horrific alchemy experiment goes [...] | [ "Military" ] |
@@ -58,7 +58,7 @@ see: [requirements.txt](/requirements.txt)
 
 1. **myanimelist:character**</br>
    | info |  |
-   |:---:|:---:|
+   |---|---|
    | spider name | mal:character |
    | source | https://myanimelist.net/character.php |
 
@@ -68,7 +68,7 @@ see: [requirements.txt](/requirements.txt)
       </br>
 
       | id | name | url | japanese | source | favorites | biodata | description |
-      |:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|
+      |---|---|---|---|---|---|---|---|
       | 1 | Edward Elric | https://myanimelist.net/character/11/Edward_Elric | エドワード・エルリック | Fullmetal Alchemist | 83,452 | { "age": "15-16 (series), 18 (movie, end of [...] | Winry Rockbell Pinako Rockbell Izumi Curtis [...] |
       | 2 | Lelouch Lamperouge | [...] | ルルーシュ・ランペルージ | Code Geass: Hangyaku no Lelouch | 157,536 | { "age": "17 (first season), 18 (second [...] | Lelouch vi Britannia (ルルーシュ・ヴィ・ブリタニア, [...] |
       | 3 | Killua Zoldyck | [...] | キルア=ゾルディック | Hunter x Hunter | 88,948 | { "age": "12 (Beginning), 14-15 (Current)", [...] | , Hunter Abilities: Killua Zoldyck is the [...] |
@@ -81,7 +81,7 @@ see: [requirements.txt](/requirements.txt)
 
 1. **myanimelist:manga**</br>
    | info |  |
-   |:---:|:---:|
+   |---|---|
    | spider name | mal:manga |
    | source | https://myanimelist.net/topmanga.php |
 
@@ -91,7 +91,7 @@ see: [requirements.txt](/requirements.txt)
       </br>
 
       | id | title | url | japanese | type | volumes | chapters | status | published | genres | themes | demographic | serialization | authors | score | ranked | popularity | members | favorites | synopsis | french |
-      |:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|
+      |---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|
       | 1 | Slam Dunk | https://myanimelist.net/manga/51/Slam_Dunk | SLAM DUNK | Manga | 31 | 276 | Finished | Sep 18, 1990 to Jun 4, 1996 | [ "Award Winning", "Sports" ] | [ "School", "Team Sports" ] | [ "Shounen" ] | Shounen Jump (Weekly) | [ "(Story & Art)", "Inoue, Takehiko" ] | 9.06 | #6 | #63 | 136,503 | 13,145 | Hanamichi Sakuragi, a tall, boisterous [...] |  |
       | 2 | Vagabond | https://myanimelist.net/manga/656/Vagabond | バガボンド | Manga | 37 | 327 | On Hiatus | Sep 3, 1998 to May 21, 2015 | [ "Action", "Adventure", "Award Winning" ] | [ "Historical", "Samurai" ] | [ "Seinen" ] | Morning | [ "(Story & Art),", "(Story)", "Inoue, [...] | 9.19 | #4 | #16 | 290,222 | 30,785 | In 16th-century Japan, Shinmen Takezou is a [...] |  |
       | 3 | Berserk | https://myanimelist.net/manga/2/Berserk | ベルセルク | Manga | Unknown | Unknown | Publishing | Aug 25, 1989 to ? | [ "Action", "Adventure", "Award Winning", [...] | [ "Gore", "Military", "Mythology", [...] | [ "Seinen" ] | Young Animal | [ "(Art)", "(Story & Art),", "Miura, [...] | 9.46 | #1 | #2 | 561,136 | 105,626 | Berserk: The Prototype |  |

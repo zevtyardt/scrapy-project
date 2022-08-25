@@ -52,7 +52,7 @@ if db.is_file():
             columns = list(next(filter(None, i)) for i in c.description)
 
             table += make_table(columns)
-            table += make_table((":---:" for i in columns), _=True)
+            table += make_table(("---" for i in columns), _=True)
             for item in data:
                 table += make_table(map(lambda x: textwrap.shorten(str(x)
                                     if x else "", 50), item))
@@ -63,10 +63,10 @@ if db.is_file():
 for k, cls in classes.items():
     md += f"1. **{':'.join(k.split('_'))}**</br>\n"
     for col in (['info', ''],
-                [':---:', ':---:'],
+                ['---', '---'],
                 ['spider name', cls.name],
                 ['source', cls.start_urls[0]]):
-        md += "   " + make_table(col, _=col[0] == ':---:').strip() + "\n"
+        md += "   " + make_table(col, _=col[0] == '---').strip() + "\n"
     tbl = tables.get(k)
     if tbl:
         md += "\n"
