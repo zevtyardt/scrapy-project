@@ -46,8 +46,8 @@ class KusonimeSpider(scrapy.Spider):
             data = []
             for smokeurl in ddl.css(".smokeurl"):
                 data.append({
-                  "desc": smokeurl.css("strong::text").get(),
-                  "url": smokeurl.css("a::attr(href)").extract()
+                    "desc": smokeurl.css("strong::text").get(),
+                    "url": smokeurl.css("a::attr(href)").extract()
                 })
             downloads.append({
                 "name": name,

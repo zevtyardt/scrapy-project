@@ -87,14 +87,15 @@ class MyanimelistCharacterSpider(MyanimelistAnimeSpider):
         item["description"] = "\n\n".join(desc)
         yield item
 
+
 class MyanimelistPeopleSpider(MyanimelistCharacterSpider):
     name = "mal:people"
     start_urls = ['https://myanimelist.net/people.php']
 
     def parse_item(self, response):
         item = {
-          "name": response.css(".title-name strong::text").get(),
-          "url": response.url}
+            "name": response.css(".title-name strong::text").get(),
+            "url": response.url}
 
         content = response.css("#contentWrapper")
         item["image url"] = content.css("img::attr(data-src)").get()
@@ -110,7 +111,8 @@ class MyanimelistPeopleSpider(MyanimelistCharacterSpider):
         info_more = content.css(".people-informantion-more ::text").getall()
         for n, line in enumerate(info_more):
             info = re.search("^([a-zA-Z ]+): ([^>]+)", line.strip())
-            if not info: break
+            if not info:
+                break
             item[info.group(1)] = info.group(2)
 
         item["description"] = "".join(info_more[n:]).strip()
