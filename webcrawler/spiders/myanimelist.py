@@ -11,7 +11,6 @@ class MyanimelistAnimeSpider(scrapy.Spider):
             href = tr.css("a::attr(href)").get()
             if href:
                 yield scrapy.Request(url=href, callback=self.parse_item)
-        return
 
         next_page = response.css("a.next::attr(href)").get()
         if next_page:
@@ -36,7 +35,7 @@ class MyanimelistAnimeSpider(scrapy.Spider):
                 if len(value) == 1 or key in ("score", "ranked"):
                     value = value[0]
                 else:
-                    value = ", ".join(sorted(set(value)))
+                    value = list(sorted(set(value)))
                 item[key] = value
 
         if item.get("english"):

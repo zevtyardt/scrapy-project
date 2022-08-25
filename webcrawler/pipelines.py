@@ -21,6 +21,7 @@ import copy
 import logging
 import difflib
 import time
+import json
 
 from scrapy.utils.project import get_project_settings
 from scrapy.exceptions import DropItem
@@ -82,7 +83,7 @@ class database:
         return t
 
     def safe_name(self, name):
-        return re.sub(r"\s+", "_", name.strip()).lower()
+        return re.sub(r"\s+", "_", name.strip()).lower().strip()
 
     def create_table_from_data(self, dbname, data_dict):
         columns, metadata = [
@@ -156,10 +157,8 @@ class database:
             similar = difflib.get_close_matches(sk, columns)
             if len(similar) > 0:
                 sk = similar[0]
-            if isinstance(v, list):
-                data_dict[sk] = ", ".join(map(str, v))
-            elif isinstance(v, dict):
-                data_dict[sk] = str(v)
+            if isinstance(v, (dict, list)):
+                data_dict[sk] = json.dumps(v, indent=2)
             else:
                 data_dict[sk] = v
 
