@@ -209,3 +209,4 @@ class ProcessPipeline:
                 self.db.rollback()
                 logging.error(
                     f"{item[unique_key]!r}: failed added to database\n{e}")
+        return item

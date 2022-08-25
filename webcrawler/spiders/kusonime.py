@@ -35,7 +35,7 @@ class KusonimeSpider(scrapy.Spider):
             else:
                 k, v = data
             item[k.strip()] = v.strip(": ")
-        item["sinopsis"] = response.css(".clear ~ p::text").get().strip()
+        item["sinopsis"] = response.css(".clear ~ p ::text").get().strip()
 
         downloads = []
         for ddl in response.css(".smokeddl"):
