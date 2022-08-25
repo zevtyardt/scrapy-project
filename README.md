@@ -19,7 +19,8 @@ see: [requirements.txt](/requirements.txt)
    <details>
      <summary><i>output example:</i></summary>
 
-</br>
+      </br>
+
       | id | title | url | genre | thumbnail | japanese | seasons | producers | type | status | total_episode | score | duration | released_on | sinopsis | download_data |
       |---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|
       | 1 | Hanabi-chan wa Okuregachi | https://kusonime.com/hanabichan-batch- [...] | [ "Comedy", "Spring 2022" ] | https://kusonime.com/wp- [...] | ハナビちゃんは遅れがち | Spring 2022 | N/A | TV Series | Ongoing | ? | 6.12 | 4 min. per ep. | Jul 10, 2022 | Musashi Shinonome, manajer baru yang akan [...] | [ { "name": "Download Hanabi-chan wa [...] |
@@ -41,7 +42,8 @@ see: [requirements.txt](/requirements.txt)
    <details>
      <summary><i>output example:</i></summary>
 
-</br>
+      </br>
+
       | id | title | url | synonyms | japanese | french | type | episodes | status | aired | premiered | broadcast | producers | licensors | studios | source | genres | theme | demographic | duration | rating | score | ranked | popularity | members | favorites | synopsis | german | spanish |
       |---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|
       | 1 | Fullmetal Alchemist: Brotherhood | [...] | Hagane no Renkinjutsushi: Fullmetal [...] | 鋼の錬金術師 FULLMETAL ALCHEMIST | Fullmetal Alchemist Brotherhood | TV | 64 | Finished Airing | Apr 5, 2009 to Jul 4, 2010 | Spring 2009 | Sundays at 17:00 (JST) | [ "Aniplex", "Mainichi Broadcasting System", [...] | [ "Aniplex of America", "Funimation" ] | Bones | Manga | [ "Action", "Adventure", "Drama", "Fantasy" ] | [ "Military" ] | [ "Shounen" ] | 24 min. per ep. | R - 17+ (violence & profanity) | 9.13 | #1 | #3 | 2,962,010 | 206,610 | After a horrific alchemy experiment goes [...] |  |  |
@@ -63,7 +65,8 @@ see: [requirements.txt](/requirements.txt)
    <details>
      <summary><i>output example:</i></summary>
 
-</br>
+      </br>
+
       | id | name | url | japanese | source | favorites | biodata | description |
       |---|---|---|---|---|---|---|---|
       | 1 | Lelouch Lamperouge | [...] | ルルーシュ・ランペルージ | Code Geass: Hangyaku no Lelouch | 157,531 | { "age": "17 (first season), 18 (second [...] | Lelouch vi Britannia (ルルーシュ・ヴィ・ブリタニア, [...] |
@@ -85,7 +88,8 @@ see: [requirements.txt](/requirements.txt)
    <details>
      <summary><i>output example:</i></summary>
 
-</br>
+      </br>
+
       | id | title | url | synonyms | japanese | type | volumes | chapters | status | published | genres | themes | demographic | serialization | authors | score | ranked | popularity | members | favorites | synopsis | french | german |
       |---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|
       | 1 | Berserk | https://myanimelist.net/manga/2/Berserk | Berserk: The Prototype | ベルセルク | Manga | Unknown | Unknown | Publishing | Aug 25, 1989 to ? | [ "Action", "Adventure", "Award Winning", [...] | [ "Gore", "Military", "Mythology", [...] | [ "Seinen" ] | Young Animal | [ "(Art)", "(Story & Art),", "Miura, [...] | 9.46 | #1 | #2 | 561,107 | 105,616 | Guts, a former mercenary now known as the [...] |  |  |

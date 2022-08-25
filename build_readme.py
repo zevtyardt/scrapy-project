@@ -61,7 +61,7 @@ if db.is_file():
 
         md += "\n"
         md += "   <details>\n"
-        md += f"     <summary><i>output example:</i></summary>\n\n</br>\n"
+        md += f"     <summary><i>output example:</i></summary>\n\n      </br>\n\n"
         md += table
         md += "   </details>\n\n"
 
