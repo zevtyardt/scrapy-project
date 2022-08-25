@@ -106,7 +106,7 @@ class database:
 
         # update self.columns
         for col in columns:
-            self.columns[dbname][col.name] = col
+            self.columns[dbname][self.safe_name(col.name)] = col
 
         self.table[dbname] = self.create_new_table(dbname, columns, metadata)
 
@@ -120,7 +120,7 @@ class database:
     def update_database(self):
         self.mapper.metadata.create_all(self.engine)
 
-    def exists(self, name, **filters):
+    def exists(self, name, filters: dict):
         name = self.safe_name(name)
         if not self.table.get(name):
             return False
@@ -147,19 +147,20 @@ class database:
         # rename similar key based on table column and filter none value
         columns, force_update = list(set(sorted(table.__table__.columns.keys()))), False
         for k, v in copy.copy(data_dict).items():
+            sk = self.safe_name(k)
+            v = data_dict.pop(k)
+
             if not v:
                 continue
 
-            if isinstance(v, list):
-                data_dict[k] = ", ".join(map(str, v))
-            elif isinstance(v, dict):
-                data_dict[k] = str(v)
-
-            sk = self.safe_name(k)
             similar = difflib.get_close_matches(sk, columns)
-
             if len(similar) > 0:
-                sk, v = similar[0], data_dict.pop(k)
+                sk = similar[0]
+            if isinstance(v, list):
+                data_dict[sk] = ", ".join(map(str, v))
+            elif isinstance(v, dict):
+                data_dict[sk] = str(v)
+            else:
                 data_dict[sk] = v
 
             if sk not in columns:
@@ -186,24 +187,25 @@ class ProcessPipeline:
         if not item:
             return
 
+        unique_key = getattr(spider, "unique_key", "title")
         if not self.db:
-            logging.info(f"{item['title']!r} crawled")
+            logging.info(f"{item[unique_key]!r} crawled")
             return item
 
         if not self.names.get(spider.name):
             self.names[spider.name] = self.parse_dbname(spider)
         name = self.names[spider.name]
 
-        if self.db.exists(name, title=item["title"]):
-            logging.error(f"{item['title']!r}: already exists!")
+        if self.db.exists(name, {unique_key: item[unique_key]}):
+            logging.error(f"{item[unique_key]!r}: already exists!")
         else:
             try:
                 if item.get('url'):
                     item["url"] = unquote(item["url"])
                 self.db.add(name, item)
                 self.db.commit()
-                logging.info(f"{item['title']!r}: added to database")
+                logging.info(f"{item[unique_key]!r}: added to database")
             except Exception as e:
                 self.db.rollback()
                 logging.error(
-                    f"{item['title']!r}: failed added to database\n{e}")
+                    f"{item[unique_key]!r}: failed added to database\n{e}")
