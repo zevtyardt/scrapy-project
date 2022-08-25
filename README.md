@@ -17,7 +17,7 @@ see: [requirements.txt](/requirements.txt)
    | source | http://kusonime.com/ |
 
    <details>
-     <summary><i>output example:</i></summary>
+     <summary><i>output example</i></summary>
 
       </br>
 
@@ -40,7 +40,7 @@ see: [requirements.txt](/requirements.txt)
    | source | https://myanimelist.net/topanime.php |
 
    <details>
-     <summary><i>output example:</i></summary>
+     <summary><i>output example</i></summary>
 
       </br>
 
@@ -63,7 +63,7 @@ see: [requirements.txt](/requirements.txt)
    | source | https://myanimelist.net/character.php |
 
    <details>
-     <summary><i>output example:</i></summary>
+     <summary><i>output example</i></summary>
 
       </br>
 
@@ -86,7 +86,7 @@ see: [requirements.txt](/requirements.txt)
    | source | https://myanimelist.net/topmanga.php |
 
    <details>
-     <summary><i>output example:</i></summary>
+     <summary><i>output example</i></summary>
 
       </br>
 

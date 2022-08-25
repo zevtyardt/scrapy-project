@@ -71,7 +71,7 @@ for k, cls in classes.items():
     if tbl:
         md += "\n"
         md += "   <details>\n"
-        md += f"     <summary><i>output example:</i></summary>\n\n      </br>\n\n"
+        md += f"     <summary><i>output example</i></summary>\n\n      </br>\n\n"
         md += tbl
         md += "   </details>\n"
     md += "\n"
