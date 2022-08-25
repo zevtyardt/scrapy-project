@@ -43,10 +43,12 @@ class KusonimeSpider(scrapy.Spider):
             if not name:
                 continue
 
-            data = {}
+            data = []
             for smokeurl in ddl.css(".smokeurl"):
-                data["resolution"] = smokeurl.css("strong::text").get()
-                data["url"] = smokeurl.css("a::attr(href)").extract()
+                data.append({
+                  "desc": smokeurl.css("strong::text").get(),
+                  "url": smokeurl.css("a::attr(href)").extract()
+                })
             downloads.append({
                 "name": name,
                 "link": data})
