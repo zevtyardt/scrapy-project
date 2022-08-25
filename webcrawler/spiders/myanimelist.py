@@ -67,7 +67,7 @@ class MyanimelistCharacterSpider(MyanimelistAnimeSpider):
             ".breadcrumb ~ .normal_header small::text").get() or "").strip("()")
 
         source = re.search(
-            f"[^(]+\(([^)]+)", response.css("title::text").get() or "")
+            r"[^(]+\(([^)]+)", response.css("title::text").get() or "")
         if source:
             item["source"] = source.group(1)
 

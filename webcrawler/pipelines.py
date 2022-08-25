@@ -8,7 +8,7 @@
 import sqlalchemy as sa
 import warnings
 from sqlalchemy import exc as sa_exc
-from sqlalchemy.orm import sessionmaker, mapper
+from sqlalchemy.orm import sessionmaker
 from sqlalchemy.orm import registry
 
 from collections import defaultdict
@@ -20,11 +20,9 @@ import sys
 import copy
 import logging
 import difflib
-import time
 import json
 
 from scrapy.utils.project import get_project_settings
-from scrapy.exceptions import DropItem
 
 settings = get_project_settings()
 db_name = settings.get("DATABASE_NAME", "database")
