@@ -35,6 +35,7 @@ db_path = db_dir.joinpath(db_name + ".sqlite")
 
 warnings.simplefilter("ignore", category=sa_exc.SAWarning)
 
+
 class database:
     def __init__(self):
         self.engine = sa.create_engine("sqlite:///%s" % db_path)
@@ -102,8 +103,8 @@ class database:
         # extend data
         for k, v in self.columns[dbname].items():
             if k not in metadata:
-                 columns.append(v)
-                 metadata[k] = attr.ib(default=v.type.python_type())
+                columns.append(v)
+                metadata[k] = attr.ib(default=v.type.python_type())
 
         # update self.columns
         for col in columns:
@@ -146,7 +147,8 @@ class database:
         table = self.table[dbname]
 
         # rename similar key based on table column and filter none value
-        columns, force_update = list(set(sorted(table.__table__.columns.keys()))), False
+        columns, force_update = list(
+            set(sorted(table.__table__.columns.keys()))), False
         for k, v in copy.copy(data_dict).items():
             sk = self.safe_name(k)
             v = data_dict.pop(k)
@@ -172,6 +174,7 @@ class database:
             table = self.table[dbname]
 
         self.session.add(table(**data_dict))
+
 
 class ProcessPipeline:
     def __init__(self):

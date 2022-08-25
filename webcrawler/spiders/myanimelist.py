@@ -1,6 +1,7 @@
 import scrapy
 import re
 
+
 class MyanimelistAnimeSpider(scrapy.Spider):
     name = 'mal:anime'
     allowed_domains = ['myanimelist.net']
@@ -24,9 +25,9 @@ class MyanimelistAnimeSpider(scrapy.Spider):
             if data.css("span"):
                 # cleaning up
                 data = list(map(lambda y: y.strip(),
-                    filter(lambda x: x.strip("\n ,"),
-                      data.css("::text").extract()
-                )))
+                                filter(lambda x: x.strip("\n ,"),
+                                       data.css("::text").extract()
+                                       )))
 
                 key, *value = data
                 if key.endswith(":"):
@@ -39,16 +40,19 @@ class MyanimelistAnimeSpider(scrapy.Spider):
                 item[key] = value
 
         if item.get("english"):
-           item["title"] = item.pop("english")
+            item["title"] = item.pop("english")
         elif item.get("japanese"):
-           item["title"] = item.pop("japanese")
+            item["title"] = item.pop("japanese")
 
-        item["synopsis"] = "".join(response.css("*[itemprop='description']::text").getall())
+        item["synopsis"] = "".join(response.css(
+            "*[itemprop='description']::text").getall())
         yield item
+
 
 class MyanimelistMangaSpider(MyanimelistAnimeSpider):
     name = "mal:manga"
     start_urls = ['https://myanimelist.net/topmanga.php']
+
 
 class MyanimelistCharacterSpider(MyanimelistAnimeSpider):
     name = "mal:character"
@@ -56,18 +60,22 @@ class MyanimelistCharacterSpider(MyanimelistAnimeSpider):
     unique_key = "name"
 
     def parse_item(self, response):
-        item = {"name": (response.css(".breadcrumb ~ .normal_header::text").get() or "").strip()}
+        item = {"name": (response.css(
+            ".breadcrumb ~ .normal_header::text").get() or "").strip()}
         item["url"] = response.url
-        item["japanese"] = (response.css(".breadcrumb ~ .normal_header small::text").get() or "").strip("()")
+        item["japanese"] = (response.css(
+            ".breadcrumb ~ .normal_header small::text").get() or "").strip("()")
 
-        source = re.search(f"[^(]+\(([^)]+)", response.css("title::text").get() or "")
+        source = re.search(
+            f"[^(]+\(([^)]+)", response.css("title::text").get() or "")
         if source:
             item["source"] = source.group(1)
 
         desc, bio = [], {}
         for i in response.css("table td::text"):
             text = i.get().strip()
-            if not text: continue
+            if not text:
+                continue
             chara_info = re.search("^([a-zA-Z ]+): ([^>]+)", text)
             if chara_info:
                 k, v = chara_info.groups()
@@ -78,6 +86,7 @@ class MyanimelistCharacterSpider(MyanimelistAnimeSpider):
         item["biodata"] = bio
         item["description"] = "\n\n".join(desc)
         yield item
+
 
 """
 class MyanimelistPeopleSpider(MyanimelistCharacterSpider):

@@ -1,5 +1,6 @@
 import scrapy
 
+
 class KusonimeSpider(scrapy.Spider):
     name = 'kusonime'
     allowed_domains = ['kusonime.com']
@@ -16,8 +17,8 @@ class KusonimeSpider(scrapy.Spider):
     def parse_content(self, response):
         item = {
             "title": (
-              response.css(".clear ~ p strong::text").get() or \
-              response.css(".wp-post-image::attr(title)").get()
+                response.css(".clear ~ p strong::text").get() or
+                response.css(".wp-post-image::attr(title)").get()
             ).strip(),
             "url": response.url,
             "genre": response.css("a[rel='tag']::text").extract(),
@@ -26,7 +27,8 @@ class KusonimeSpider(scrapy.Spider):
 
         for info in response.css(".info p"):
             data = info.css("::text").getall()
-            if data[0].strip() == "Genre": continue
+            if data[0].strip() == "Genre":
+                continue
 
             if len(data) > 2:
                 k, v = data[0], data[-1]
@@ -46,7 +48,7 @@ class KusonimeSpider(scrapy.Spider):
                 data["resolution"] = smokeurl.css("strong::text").get()
                 data["url"] = smokeurl.css("a::attr(href)").extract()
             downloads.append({
-               "name": name,
-               "link": data})
+                "name": name,
+                "link": data})
         item["download_data"] = downloads
         yield item
