@@ -113,13 +113,13 @@ see: [requirements.txt](/requirements.txt)
 
       </br>
 
-      | id | name | url | image_url | given_name | birthday | member_favorites | description | alternate_names | height | weight | blood_type | hometown | favourite_animal | favourite_mangaka | favourite_music | hobbies | skills | pets | debut_role |
-      |---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|
-      | 1 | Miyazaki, Hayao | https://myanimelist.net/people/1870/Hayao_Miyazaki | [...] | 駿 | Jan 5, 1941 | 66,974 | Miyazaki, the second of four brothers, was [...] |  |  |  |  |  |  |  |  |  |  |  |  |
-      | 2 | Kamiya, Hiroshi | https://myanimelist.net/people/118/Hiroshi_Kamiya | [...] | 浩史 | Matsudo, Chiba Prefecture, Japan | 103,260 | Kamiya Hiroshi went to Aoni Juku and decided [...] | ヒロC, HiroC, Kamiyan | 167 cm (5'6") | 53 kg (117 lbs) | A |  |  |  |  |  |  |  |  |
-      | 3 | Oda, Eiichiro | https://myanimelist.net/people/1881/Eiichiro_Oda | [...] | 栄一郎 | Jan 1, 1975 | 47,763 | Favourite Real-Life Pirate: Edward Teach [...] |  |  |  | A | Kumamoto, Japan | Big gentle dogs | Akira Toriyama | '70s soul music |  |  |  |  |
-      | 4 | Miyano, Mamoru | https://myanimelist.net/people/65/Mamoru_Miyano | [...] | 真守 | Jun 8, 1983 | 86,711 | Mamoru Miyano won Best Voice Actor award in [...] |  | 182 cm | 70 kg | B | Saitama, Japan |  |  |  | singing, soccer | harmonica, harp |  |  |
-      | 5 | Hayami, Saori | https://myanimelist.net/people/869/Saori_Hayami | [...] | Saori Matsuo (松尾 沙織) | May 29, 1991 | 57,364 | Member of duet "Blue Drops" with Yoshida [...] | Saori Matsuo, 松尾 沙織 | 164 cm |  | AB | Tokyo, Japan |  |  |  |  |  |  |  |
+      | id | name | url | image_url | given_name | birthday | member_favorites | description | alternate_names | height | weight | blood_type | hometown | favourite_animal | favourite_mangaka | favourite_music | hobbies | skills | pets | debut_role | agency | dislikes | places_he_wants_to_visit | awards |
+      |---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|
+      | 1 | Miyazaki, Hayao | https://myanimelist.net/people/1870/Hayao_Miyazaki | [...] | 駿 | Jan 5, 1941 | 66,974 | Miyazaki, the second of four brothers, was [...] |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |
+      | 2 | Kamiya, Hiroshi | https://myanimelist.net/people/118/Hiroshi_Kamiya | [...] | 浩史 | Matsudo, Chiba Prefecture, Japan | 103,260 | Kamiya Hiroshi went to Aoni Juku and decided [...] | ヒロC, HiroC, Kamiyan | 167 cm (5'6") | 53 kg (117 lbs) | A |  |  |  |  |  |  |  |  |  |  |  |  |
+      | 3 | Oda, Eiichiro | https://myanimelist.net/people/1881/Eiichiro_Oda | [...] | 栄一郎 | Jan 1, 1975 | 47,763 | Favourite Real-Life Pirate: Edward Teach [...] |  |  |  | A | Kumamoto, Japan | Big gentle dogs | Akira Toriyama | '70s soul music |  |  |  |  |  |  |  |  |
+      | 4 | Miyano, Mamoru | https://myanimelist.net/people/65/Mamoru_Miyano | [...] | 真守 | Jun 8, 1983 | 86,711 | Mamoru Miyano won Best Voice Actor award in [...] |  | 182 cm | 70 kg | B | Saitama, Japan |  |  |  | singing, soccer | harmonica, harp |  |  |  |  |  |  |
+      | 5 | Hayami, Saori | https://myanimelist.net/people/869/Saori_Hayami | [...] | Saori Matsuo (松尾 沙織) | May 29, 1991 | 57,364 | Member of duet "Blue Drops" with Yoshida [...] | Saori Matsuo, 松尾 沙織 | 164 cm |  | AB | Tokyo, Japan |  |  |  |  |  |  |  |  |  |  |  |
 
       _and more.._
 
