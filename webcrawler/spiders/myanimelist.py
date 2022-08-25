@@ -12,6 +12,7 @@ class MyanimelistAnimeSpider(scrapy.Spider):
             href = tr.css("a::attr(href)").get()
             if href:
                 yield scrapy.Request(url=href, callback=self.parse_item)
+        return
 
         next_page = response.css("a.next::attr(href)").get()
         if next_page:
@@ -45,7 +46,7 @@ class MyanimelistAnimeSpider(scrapy.Spider):
             item["title"] = item.pop("japanese")
 
         item["synopsis"] = "".join(response.css(
-            "*[itemprop='description']::text").getall())
+            "*[itemprop='description'] ::text").getall())
         yield item
 
 
@@ -72,7 +73,7 @@ class MyanimelistCharacterSpider(MyanimelistAnimeSpider):
             item["source"] = source.group(1)
 
         desc, bio = [], {}
-        for i in response.css("table td::text"):
+        for i in response.css("table td ::text"):
             text = i.get().strip()
             if not text:
                 continue
@@ -87,12 +88,31 @@ class MyanimelistCharacterSpider(MyanimelistAnimeSpider):
         item["description"] = "\n\n".join(desc)
         yield item
 
-
-"""
 class MyanimelistPeopleSpider(MyanimelistCharacterSpider):
     name = "mal:people"
     start_urls = ['https://myanimelist.net/people.php']
 
     def parse_item(self, response):
-        pass
-"""
+        item = {
+          "name": response.css(".title-name strong::text").get(),
+          "url": response.url}
+
+        content = response.css("#contentWrapper")
+        item["image url"] = content.css("img::attr(data-src)").get()
+
+        for div in content.css("div")[10:]:
+            if "more" in (div.css("::text").get() or "").lower():
+                break
+            if not div.css(".spaceit_pad"):
+                continue
+            k, v = div.css("::text").extract()
+            item[k[:-1]] = v.strip()
+
+        info_more = content.css(".people-informantion-more ::text").getall()
+        for n, line in enumerate(info_more):
+            info = re.search("^([a-zA-Z ]+): ([^>]+)", line.strip())
+            if not info: break
+            item[info.group(1)] = info.group(2)
+
+        item["description"] = "".join(info_more[n:]).strip()
+        yield item
