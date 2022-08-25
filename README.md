@@ -10,59 +10,87 @@ These are collection of some of my web scraping projects with scrapy. Feel free 
 see: [requirements.txt](/requirements.txt)
 
 ## List Crawlers:
-<details>
-  <summary><b>kusonime</b></summary>
+1. **kusonime**</br>
+   |     |     |
+   | --- | --- |
+   | spider name | kusonime |
+   | source | http://kusonime.com/ |
 
-   | id | title | url | genre | thumbnail | japanese | seasons | producers | type | status | total_episode | score | duration | released_on | sinopsis | download_data |
-   |---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|
-   | 1 | Hanabi-chan wa Okuregachi | https://kusonime.com/hanabichan-batch- [...] | Comedy, Spring 2022 | https://kusonime.com/wp- [...] | ハナビちゃんは遅れがち | Spring 2022 | N/A | TV Series | Ongoing | ? | 6.12 | 4 min. per ep. | Jul 10, 2022 | Musashi Shinonome, manajer baru yang akan [...] | {'name': 'Download Hanabi-chan wa Okuregachi [...] |
-   | 2 | Tekken: Bloodline | https://kusonime.com/tekken-bloodline-batch- [...] | Action, Martial Arts, Anime ONA | https://kusonime.com/wp- [...] | Tekken: Bloodline | Anime ONA | N/A | ONA | Completed | 6 | 6.58 | 25 min. per ep. | Aug 18, 2022 | “Kekuatan adalah segalanya.” Jin Kazama [...] | {'name': 'Download Tekken: Bloodline Batch [...] |
-   | 3 | Yuuki Yuuna wa Yuusha de Aru: Yuusha no Shou | https://kusonime.com/yuuki-yuuna-wa-yuusha- [...] | Drama, Fantasy, Magic, Slice of Life, Fall 2017 | https://kusonime.com/wp- [...] | 結城友奈は勇者である -勇者の章- | Fall 2017 | Pony Canyon | BD | Completed | 6 | 7.64 | 24 min. per ep. | Nov 25, 2017 | kelanjutan dari cerita Yuki Yuna atau season [...] | {'name': 'Download Yuuki Yuuna wa Yuusha de [...] |
-   | 4 | TENSURA : Sukuwareru Ramiris | https://kusonime.com/sukuwareru-ramiris- [...] | Comedy, Fantasy, Anime ONA | https://kusonime.com/wp- [...] | 救われるラミリス | Anime ONA | N/A | ONA | Completed | 2 | 6.18 | 2 min. per ep. | Mar 19, 2022 | Episode spesial melalui streaming youtube [...] | {'name': 'Download TENSURA : Sukuwareru [...] |
-   | 5 | Takt Op. Destiny | https://kusonime.com/takt-op-destiny-batch- [...] | Action, Fantasy, Music, Fall 2021 | https://kusonime.com/wp- [...] | takt op.Destiny | Fall 2021 | DeNA, Bandai Namco Arts | BD | Completed | 12 | 7.16 | 23 min. per ep. | Oct 06, 2021 | ceritanya sendiri, suatu hari meteorit hitam [...] | {'name': 'Download Takt Op. Destiny Batch BD [...] |
+   <details>
+     <summary><i>output example</i></summary>
 
-   _and more.._
+      | id | title | url | genre | thumbnail | japanese | seasons | producers | type | status | total_episode | score | duration | released_on | sinopsis | download_data |
+      |---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|
+      | 1 | Hanabi-chan wa Okuregachi | https://kusonime.com/hanabichan-batch- [...] | [ "Comedy", "Spring 2022" ] | https://kusonime.com/wp- [...] | ハナビちゃんは遅れがち | Spring 2022 | N/A | TV Series | Ongoing | ? | 6.12 | 4 min. per ep. | Jul 10, 2022 | Musashi Shinonome, manajer baru yang akan [...] | [ { "name": "Download Hanabi-chan wa [...] |
+      | 2 | Shikong Zhi Xi (Time Space Rift) | https://kusonime.com/shikong-zhi-xi-batch- [...] | [ "Action", "Anime ONA" ] | https://kusonime.com/wp- [...] | 时空之隙 | Anime ONA | B.CMAY PICTURES, bilibili | ONA | Completed | 13 | 6.49 | 21 min. per ep. | Apr 15, 2022 | Energi yang tidak stabil dari dunia saat ini [...] | [ { "name": "Download Shikong Zhi Xi Batch [...] |
+      | 3 | Gaikotsu Kishi-sama Tadaima Isekai e Odekakechuu | https://kusonime.com/skeleton-knight-batch- [...] | [ "Action", "Fantasy", "Spring 2022" ] | https://kusonime.com/wp- [...] | 骸骨騎士様、只今異世界へお出掛け中 | Spring 2022 | Pony Canyon, AT-X, DAX Production, Docomo [...] | BD | Completed | 12 | 7.31 | 23 min. per ep. | Apr 07, 2022 | selain Ainz-sama ada juga tengkorak [...] | [ { "name": "Download Gaikotsu Kishi-sama [...] |
+      | 4 | Steamboy | https://kusonime.com/steamboy-bd-subtitle- [...] | [ "Action", "Adventure", "Drama", [...] | https://kusonime.com/wp- [...] | スチームボーイ | Anime Movie | Bandai Visual, Dentsu, TBS, Imagica, Bandai, [...] | Movie | Completed | 1 | 7.33 | 2 hr. 6 min. | Jul 17, 2004 | Becerita tentang cowok 13 tahun bernama [...] | [ { "name": "Download Movie Steamboy BD [...] |
+      | 5 | Xiao Mo Tou Baolu La! (Busted! Darklord) | https://kusonime.com/xiao-mo-tou-baolu-la- [...] | [ "Comedy", "Anime ONA" ] | https://kusonime.com/wp- [...] | 小魔头暴露啦！ | Anime ONA | N/A | ONA | Completed | 26 | 6.38 | 8 min. per ep. | Jan 15, 2022 | Dalam upaya untuk bertahan hidup, Yu Renjie, [...] | [ { "name": "Download Xiao Mo Tou Baolu La! [...] |
 
-</details>
-<details>
-  <summary><b>myanimelist:anime</b></summary>
+      _and more.._
 
-   | id | title | url | synonyms | japanese | type | episodes | status | aired | premiered | broadcast | producers | licensors | studios | source | genres | themes | demographic | duration | rating | score | ranked | popularity | members | favorites | synopsis | german | spanish | french |
-   |---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|
-   | 1 | Gintama: Enchousen | [...] | Gintama' (2012), Gintama' Overdrive, Kintama | 銀魂' 延長戦 | TV | 13 | Finished Airing | Oct 4, 2012 to Mar 28, 2013 | Fall 2012 | Thursdays at 18:00 (JST) | Aniplex, Dentsu, Miracle Bus, Shueisha, TV Tokyo | None found,, add some | Sunrise | Manga | Action, Comedy, Sci-Fi | Gag Humor, Historical, Parody, Samurai | Shounen | 24 min. per ep. | PG-13 - Teens 13 or older | 9.04 | #8 | #697 | 288,947 | 2,852 | While Gintoki Sakata was away, the Yorozuya [...] |  |  |  |
-   | 2 | Hunter x Hunter | [...] | HxH (2011) | HUNTER×HUNTER（ハンター×ハンター） | TV | 148 | Finished Airing | Oct 2, 2011 to Sep 24, 2014 | Fall 2011 | Sundays at 10:55 (JST) | Nippon Television Network, Shueisha, VAP | VIZ Media | Madhouse | Manga | Action, Adventure, Fantasy |  | Shounen | 23 min. per ep. | PG-13 - Teens 13 or older | 9.04 | #9 | #10 | 2,446,642 | 187,337 | Hunters devote themselves to accomplishing [...] | Hunter x Hunter | Hunter x Hunter | Hunter X Hunter |
-   | 3 | Fullmetal Alchemist: Brotherhood | [...] | Hagane no Renkinjutsushi: Fullmetal [...] | 鋼の錬金術師 FULLMETAL ALCHEMIST | TV | 64 | Finished Airing | Apr 5, 2009 to Jul 4, 2010 | Spring 2009 | Sundays at 17:00 (JST) | Aniplex, Mainichi Broadcasting System, [...] | Aniplex of America, Funimation | Bones | Manga | Action, Adventure, Drama, Fantasy | Military | Shounen | 24 min. per ep. | R - 17+ (violence & profanity) | 9.13 | #1 | #3 | 2,961,928 | 206,608 | After a horrific alchemy experiment goes [...] |  |  | Fullmetal Alchemist Brotherhood |
-   | 4 | Legend of the Galactic Heroes | [...] | LoGH, LotGH, Gin'eiden, GinEiDen, [...] | 銀河英雄伝説 | OVA | 110 | Finished Airing | Jan 8, 1988 to Mar 17, 1997 |  |  | Kitty Films, TV Tokyo, Tokuma Japan [...] | Sentai Filmworks | Kitty Film Mitaka Studio | Novel | Drama, Sci-Fi | Adult Cast, Military, Space |  | 26 min. per ep. | R - 17+ (violence & profanity) | 9.03 | #11 | #705 | 286,476 | 14,879 | The 150-year-long stalemate between the two [...] |  |  | Les Héros de la Galaxie |
-   | 5 | Fruits Basket: The Final Season | [...] | Fruits Basket 3rd Season, Fruits Basket [...] | フルーツバスケット The Final | TV | 13 | Finished Airing | Apr 6, 2021 to Jun 29, 2021 | Spring 2021 | Tuesdays at 01:30 (JST) | 8PAN, Avex Pictures, Hakusensha, Nihon Ad [...] | Funimation | TMS Entertainment | Manga | Drama, Romance, Supernatural |  | Shoujo | 23 min. per ep. | PG-13 - Teens 13 or older | 9.03 | #10 | #512 | 369,489 | 17,088 | Hundreds of years ago, the Chinese Zodiac [...] | Fruits Basket Staffel 3 | Fruits Basket: The Final Season | Fruits Basket Saison 3 |
+   </details>
 
-   _and more.._
+1. **myanimelistanime**</br>
+   |     |     |
+   | --- | --- |
+   | spider name | mal:anime |
+   | source | https://myanimelist.net/topanime.php |
 
-</details>
-<details>
-  <summary><b>myanimelist:manga</b></summary>
+   <details>
+     <summary><i>output example</i></summary>
 
-   | id | title | url | synonyms | japanese | type | volumes | chapters | status | published | genres | themes | demographic | serialization | authors | score | ranked | popularity | members | favorites | synopsis | french | german | spanish |
-   |---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|
-   | 1 | 20th Century Boys | https://myanimelist.net/manga/3/20th_Century_Boys | 20 Seiki Shounen, Nijuu Seiki Shounen, [...] | 20世紀少年 | Manga | 22 | 249 | Finished | Sep 27, 1999 to Apr 24, 2006 | Award Winning, Drama, Mystery, Sci-Fi | Historical, Psychological | Seinen | Big Comic Spirits | (Story & Art), Urasawa, Naoki | 8.95 | #12 | #29 | 198,889 | 15,944 | As the 20th century approaches its end, [...] |  |  |  |
-   | 2 | Vinland Saga | https://myanimelist.net/manga/642/Vinland_Saga |  | ヴィンランド・サガ | Manga | Unknown | Unknown | Publishing | Apr 13, 2005 to ? | Action, Adventure, Award Winning, Drama | Historical | Seinen | Afternoon | (Story & Art), Yukimura, Makoto | 8.99 | #10 | #23 | 238,524 | 25,402 | Thorfinn, son of one of the Vikings' [...] |  |  |  |
-   | 3 | Grand Blue Dreaming | https://myanimelist.net/manga/70345/Grand_Blue |  | ぐらんぶる | Manga | Unknown | Unknown | Publishing | Apr 7, 2014 to ? | Comedy |  | Seinen | good! Afternoon | (Art), (Story),, Inoue, Kenji, Yoshioka, Kimitake | 9.03 | #9 | #50 | 150,624 | 15,316 | Among the seaside town of Izu's ocean waves [...] |  |  |  |
-   | 4 | Berserk | https://myanimelist.net/manga/2/Berserk | Berserk: The Prototype | ベルセルク | Manga | Unknown | Unknown | Publishing | Aug 25, 1989 to ? | Action, Adventure, Award Winning, Drama, [...] | Gore, Military, Mythology, Psychological | Seinen | Young Animal | (Art), (Story & Art),, Miura, Kentarou, [...] | 9.46 | #1 | #2 | 561,072 | 105,605 | Guts, a former mercenary now known as the [...] |  |  |  |
-   | 5 | キングダム | https://myanimelist.net/manga/16765/Kingdom |  |  | Manga | Unknown | Unknown | Publishing | Jan 26, 2006 to ? | Action, Award Winning | Historical, Military | Seinen | Young Jump | (Story & Art), Hara, Yasuhisa | 8.98 | #11 | #58 | 143,045 | 12,871 | During the Warring States period in China, [...] |  |  |  |
+      | id | title | url | synonyms | japanese | french | type | episodes | status | aired | premiered | broadcast | producers | licensors | studios | source | genres | theme | demographic | duration | rating | score | ranked | popularity | members | favorites | synopsis | german | spanish |
+      |---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|
+      | 1 | Fullmetal Alchemist: Brotherhood | [...] | Hagane no Renkinjutsushi: Fullmetal [...] | 鋼の錬金術師 FULLMETAL ALCHEMIST | Fullmetal Alchemist Brotherhood | TV | 64 | Finished Airing | Apr 5, 2009 to Jul 4, 2010 | Spring 2009 | Sundays at 17:00 (JST) | [ "Aniplex", "Mainichi Broadcasting System", [...] | [ "Aniplex of America", "Funimation" ] | Bones | Manga | [ "Action", "Adventure", "Drama", "Fantasy" ] | [ "Military" ] | [ "Shounen" ] | 24 min. per ep. | R - 17+ (violence & profanity) | 9.13 | #1 | #3 | 2,962,010 | 206,610 | After a horrific alchemy experiment goes [...] |  |  |
+      | 2 | Gintama Season 4 | https://myanimelist.net/anime/28977/Gintama° | Gintama' (2015) | 銀魂° | Gintama Saison 4 | TV | 51 | Finished Airing | Apr 8, 2015 to Mar 30, 2016 | Spring 2015 | Wednesdays at 18:00 (JST) | [ "Aniplex", "Dentsu", "TV Tokyo" ] | [ "Crunchyroll", "Funimation" ] | Bandai Namco Pictures | Manga | [ "Action", "Comedy", "Sci-Fi" ] | [ "Gag Humor", "Historical", "Parody", "Samurai" ] | [ "Shounen" ] | 24 min. per ep. | PG-13 - Teens 13 or older | 9.08 | #3 | #338 | 550,787 | 14,871 | Gintoki, Shinpachi, and Kagura return as the [...] | Gintama Season 4 | Gintama Temporada 4 |
+      | 3 | Fate/stay night: Heaven's Feel - III. Spring Song | [...] | Fate/stay night Movie: Heaven's Feel 3 | 劇場版「Fate/stay night [Heaven's Feel] [...] | Fate/stay night: Heaven's Feel - III. Spring Song | Movie | 1 | Finished Airing | Aug 15, 2020 |  |  | [ "Aniplex", "Kadokawa", "Notes" ] | Aniplex of America | ufotable | Visual novel | [ "Action", "Fantasy", "Supernatural" ] |  |  | 2 hr. 2 min. | R - 17+ (violence & profanity) | 8.70 | #50 | #704 | 287,013 | 7,089 | The Fifth Holy Grail War in Fuyuki City has [...] |  |  |
+      | 4 | Steins;Gate | https://myanimelist.net/anime/9253/Steins_Gate |  | STEINS;GATE |  | TV | 24 | Finished Airing | Apr 6, 2011 to Sep 14, 2011 | Spring 2011 | Wednesdays at 02:05 (JST) | [ "AT-X", "Frontier Works", "Kadokawa [...] | Funimation | White Fox | Visual novel | [ "Drama", "Sci-Fi", "Suspense" ] | [ "Psychological", "Time Travel" ] |  | 24 min. per ep. | PG-13 - Teens 13 or older | 9.08 | #4 | #13 | 2,288,040 | 174,453 | Eccentric scientist Rintarou Okabe has a [...] |  |  |
+      | 5 | Kaguya-sama: Love is War - Ultra Romantic | https://myanimelist.net/anime/43608/Kaguya- [...] | Kaguya-sama wa Kokurasetai: Tensai-tachi no [...] | かぐや様は告らせたい-ウルトラロマンティック- |  | TV | 13 | Finished Airing | Apr 9, 2022 to Jun 25, 2022 | Spring 2022 | Saturdays at 00:00 (JST) | [ "Aniplex", "JR East Marketing & [...] | Aniplex of America | A-1 Pictures | Manga | [ "Comedy", "Suspense" ] | [ "Psychological", "Romantic Subtext", "School" ] | [ "Seinen" ] | 23 min. per ep. | PG-13 - Teens 13 or older | 9.13 | #2 | #274 | 633,220 | 22,828 | The elite members of Shuchiin Academy's [...] |  |  |
 
-   _and more.._
+      _and more.._
 
-</details>
-<details>
-  <summary><b>myanimelist:character</b></summary>
+   </details>
 
-   | id | name | url | japanese | source | favorites | biodata | description |
-   |---|---|---|---|---|---|---|---|
-   | 1 | Levi | https://myanimelist.net/character/45627/Levi | リヴァイ | Shingeki no Kyojin | 131,621 | {'birthday': 'December 25', 'height': '160 [...] | Levi is known as humanity's most powerful [...] |
-   | 2 | Light Yagami | https://myanimelist.net/character/80/Light_Yagami | 夜神 月 | Death Note | 89,887 | {'birthdate': 'February 28, 1986 (1989 in [...] | Age (during the series): 17-23 Light, born [...] |
-   | 3 | Lelouch Lamperouge | [...] | ルルーシュ・ランペルージ | Code Geass: Hangyaku no Lelouch | 157,525 | {'age': '17 (first season), 18 (second [...] | Lelouch vi Britannia (ルルーシュ・ヴィ・ブリタニア, [...] |
-   | 4 | Zoro Roronoa | https://myanimelist.net/character/62/Zoro_Roronoa | ロロノア・ゾロ | One Piece | 95,836 | {'age': '19; 21', 'birthdate': 'November 11, [...] | Bounty: Zoro was the first crew member to be [...] |
-   | 5 | L Lawliet | https://myanimelist.net/character/71/L_Lawliet | エル ローライト | Death Note | 120,186 | {'birthday': 'October 31, 1979 (1982 in [...] | L, who also uses the aliases Hideki Ryuga, [...] |
+1. **myanimelistcharacter**</br>
+   |     |     |
+   | --- | --- |
+   | spider name | mal:character |
+   | source | https://myanimelist.net/character.php |
 
-   _and more.._
+   <details>
+     <summary><i>output example</i></summary>
 
-</details>
+      | id | name | url | japanese | source | favorites | biodata | description |
+      |---|---|---|---|---|---|---|---|
+      | 1 | Lelouch Lamperouge | [...] | ルルーシュ・ランペルージ | Code Geass: Hangyaku no Lelouch | 157,531 | { "age": "17 (first season), 18 (second [...] | Lelouch vi Britannia (ルルーシュ・ヴィ・ブリタニア, [...] |
+      | 2 | Levi | https://myanimelist.net/character/45627/Levi | リヴァイ | Shingeki no Kyojin | 131,616 | { "birthday": "December 25", "height": "160 [...] | Levi is known as humanity's most powerful [...] |
+      | 3 | Luffy Monkey D. | [...] | モンキー・D・ルフィ | One Piece | 120,134 | { "age": "17; 19", "birthdate": "May 5, [...] | Bounty: Luffy is the captain of the Straw [...] |
+      | 4 | L Lawliet | https://myanimelist.net/character/71/L_Lawliet | エル ローライト | Death Note | 120,189 | { "birthday": "October 31, 1979 (1982 in [...] | L, who also uses the aliases Hideki Ryuga, [...] |
+      | 5 | Holo | https://myanimelist.net/character/7373/Holo | ホロ | Ookami to Koushinryou | 26,747 | { "age": "Unknown", "height": "160 cm", [...] | Holo is a wolf harvest deity originally from [...] |
+
+      _and more.._
+
+   </details>
+
+1. **myanimelistmanga**</br>
+   |     |     |
+   | --- | --- |
+   | spider name | mal:manga |
+   | source | https://myanimelist.net/topmanga.php |
+
+   <details>
+     <summary><i>output example</i></summary>
+
+      | id | title | url | synonyms | japanese | type | volumes | chapters | status | published | genres | themes | demographic | serialization | authors | score | ranked | popularity | members | favorites | synopsis | french | german |
+      |---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|
+      | 1 | Berserk | https://myanimelist.net/manga/2/Berserk | Berserk: The Prototype | ベルセルク | Manga | Unknown | Unknown | Publishing | Aug 25, 1989 to ? | [ "Action", "Adventure", "Award Winning", [...] | [ "Gore", "Military", "Mythology", [...] | [ "Seinen" ] | Young Animal | [ "(Art)", "(Story & Art),", "Miura, [...] | 9.46 | #1 | #2 | 561,107 | 105,616 | Guts, a former mercenary now known as the [...] |  |  |
+      | 2 | ジョジョの奇妙な冒険 Part7 STEEL BALL RUN | [...] | JoJo's Bizarre Adventure Part 7: Steel Ball [...] |  | Manga | 24 | 96 | Finished | Jan 19, 2004 to Apr 19, 2011 | [ "Action", "Adventure", "Mystery", [...] | [ "Historical" ] | [ "Seinen", "Shounen" ] | Ultra Jump | [ "(Story & Art)", "Araki, Hirohiko" ] | 9.28 | #2 | #27 | 212,316 | 35,940 | In the American Old West, the world's [...] | Steel Ball Run |  |
+      | 3 | 〈物語〉シリーズ ファーストシーズン | [...] | Bakemonogatari, Monster Tale, [...] |  | Light Novel | 6 | 107 | Finished | Nov 1, 2006 to Jul 28, 2010 | [ "Action", "Comedy", "Mystery", "Romance", [...] | [ "Vampire" ] |  | Mephisto | [ "(Art)", "(Story),", "NISIO, ISIN", "VOFAN" ] | 8.95 | #13 | #255 | 52,740 | 2,850 | This is a story, a "ghostory" of sorts, [...] |  |  |
+      | 4 | One Piece | https://myanimelist.net/manga/13/One_Piece |  | ONE PIECE | Manga | Unknown | Unknown | Publishing | Jul 22, 1997 to ? | [ "Action", "Adventure", "Fantasy" ] |  | [ "Shounen" ] | Shounen Jump (Weekly) | [ "(Story & Art)", "Oda, Eiichiro" ] | 9.20 | #3 | #3 | 509,853 | 100,992 | Gol D. Roger, a man referred to as the [...] |  |  |
+      | 5 | Vagabond | https://myanimelist.net/manga/656/Vagabond |  | バガボンド | Manga | 37 | 327 | On Hiatus | Sep 3, 1998 to May 21, 2015 | [ "Action", "Adventure", "Award Winning" ] | [ "Historical", "Samurai" ] | [ "Seinen" ] | Morning | [ "(Story & Art),", "(Story)", "Inoue, [...] | 9.19 | #4 | #16 | 290,208 | 30,783 | In 16th-century Japan, Shinmen Takezou is a [...] |  |  |
+
+      _and more.._
+
+   </details>
+
