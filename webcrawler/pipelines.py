@@ -43,7 +43,8 @@ class database:
         self.session = Session()
 
         self.columns = defaultdict(dict)
-        self.table = self.init_table()
+        self.unique_keys = defaultdict(lambda: None)
+        self.table = None
 
     def create_new_table(self, dbname, columns, metadata):
         wrapper = attr.s(type("wrapper", (), metadata))
@@ -64,11 +65,11 @@ class database:
                 sa_col = sa.Column(**column)
                 columns.append(sa_col)
                 self.columns[dbname][name] = sa_col
-                if name != "id":
-                    metadata[name] = attr.ib(default=column_type.python_type())
 
+                if name != "id" or self.unique_keys[dbname] == "id":
+                    metadata[name] = attr.ib(default=column_type.python_type())
             table[dbname] = self.create_new_table(dbname, columns, metadata)
-        return table
+        self.table = table
 
     def get_column_type(self, v):
         if isinstance(v, bool):
@@ -90,13 +91,12 @@ class database:
             "id": attr.ib(init=False)}
         for k, v in data_dict.items():
             name = self.safe_name(k)
-            if name == "id":
-                continue
-
             v_type = self.get_column_type(v)
-            columns.append(sa.Column(
-                name, v_type))
-            metadata[name] = attr.ib(default=v_type().python_type())
+
+            if name != "id" or self.unique_keys[dbname] == "id":
+               metadata[name] = attr.ib(default=v_type().python_type())
+            if name != "id":
+               columns.append(sa.Column(name, v_type))
 
         # extend data
         for k, v in self.columns[dbname].items():
@@ -139,6 +139,7 @@ class database:
         dbname = self.safe_name(dbname)
 
         if not self.table.get(dbname):
+            logging.info(f"create a new table: {dbname!r}")
             self.create_table_from_data(dbname, data_dict)
             self.update_database()
 
@@ -181,32 +182,39 @@ class ProcessPipeline:
 
     def parse_dbname(self, spider):
         clsname = spider.__class__.__name__
-        return clsname[0] + re.sub(r"[A-Z]", lambda x: "_" + x[0], clsname[1:-6])
+        return self.db.safe_name(clsname[0] + re.sub(r"[A-Z]", lambda x: "_" + x[0], clsname[1:-6]))
 
     def process_item(self, item, spider):
         if not item:
             return
 
         unique_key = getattr(spider, "unique_key", "title")
+        output_keys = getattr(spider, "outputs", [unique_key])
+        out = ", ".join(f"{item.get(key)!r}" for key in output_keys)
+
         if not self.db:
-            logging.info(f"{item[unique_key]!r} crawled")
+            logging.info(f"{out} crawled")
             return item
 
         if not self.names.get(spider.name):
             self.names[spider.name] = self.parse_dbname(spider)
         name = self.names[spider.name]
 
+        self.db.unique_keys[name] = unique_key
+        if self.db.table is None:
+            self.db.init_table()
+
         if self.db.exists(name, {unique_key: item[unique_key]}):
-            logging.error(f"{item[unique_key]!r}: already exists!")
+            logging.error(f"{out}: already exists!")
         else:
             try:
                 if item.get('url'):
                     item["url"] = unquote(item["url"])
                 self.db.add(name, item)
                 self.db.commit()
-                logging.info(f"{item[unique_key]!r}: added to database")
+                logging.info(f"{out}: added to database")
             except Exception as e:
                 self.db.rollback()
                 logging.error(
-                    f"{item[unique_key]!r}: failed added to database\n{e}")
+                    f"{out}: failed added to database\n{e}")
         return item
