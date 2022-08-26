@@ -33,6 +33,29 @@ see: [requirements.txt](/requirements.txt)
 
    </details>
 
+1. **hackernews**</br>
+   | info |  |
+   |---|---|
+   | spider name | hackernews |
+   | source | http://news.ycombinator.com/ |
+
+   <details>
+     <summary><i>output example</i></summary>
+
+      </br>
+
+      | id | title | url | from_site | rank | score | user | date |
+      |---|---|---|---|---|---|---|---|
+      | 32542620 | Cybersecurity in 1989: Looking back at “The [...] | [...] | lawfareblog.com | 13 | 99 points | Hooke | 2022-08-21T17:52:44 |
+      | 32553566 | The top layer: a solution to z-index:10000 | https://developer.chrome.com/blog/what-is- [...] | chrome.com | 27 | 105 points | feross | 2022-08-22T16:17:33 |
+      | 32558151 | The Emperor of Stones (2020) | https://www.archaeology.org/issues/388- [...] | archaeology.org | 23 | 8 points | drdee | 2022-08-22T22:35:15 |
+      | 32560278 | The great Miyazaki watch of 2022 | [...] | robinsloan.com | 50 | 285 points | akkartik | 2022-08-23T03:48:19 |
+      | 32560540 | Superefficient solar desalination (2020) | [...] | acs.org | 38 | 72 points | abrax3141 | 2022-08-23T04:41:19 |
+
+      _and more.._
+
+   </details>
+
 1. **myanimelist:anime**</br>
    | info |  |
    |---|---|

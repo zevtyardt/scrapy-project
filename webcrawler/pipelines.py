@@ -74,10 +74,10 @@ class database:
     def get_column_type(self, v):
         if isinstance(v, bool):
             t = sa.Boolean
+        elif isinstance(v, int) or (isinstance(v, str) and v.isdigit()):
+            t = sa.Integer
         elif isinstance(v, (str, dict, list)):
             t = sa.String
-        elif isinstance(v, int):
-            t = sa.Integer
         else:
             raise ValueError(f"unknown value type {v!r}")
         return t
