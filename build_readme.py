@@ -46,8 +46,8 @@ if db.is_file():
 
         table = ""
         c = cur.execute(
-            "select * from %r where id in (1, 2, 3, 4, 5)" % db_name[0])
-        data = c.fetchall()
+            "select * from %r" % db_name[0])
+        data = c.fetchmany(5)
         if len(data) > 0:
             columns = list(next(filter(None, i)) for i in c.description)
 

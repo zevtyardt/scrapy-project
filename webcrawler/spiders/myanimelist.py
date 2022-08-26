@@ -45,7 +45,7 @@ class MyanimelistAnimeSpider(scrapy.Spider):
             item["title"] = item.pop("japanese")
 
         item["synopsis"] = "".join(response.css(
-            "*[itemprop='description'] ::text").getall())
+            "*[itemprop='description']::text").getall())
         yield item
 
 
@@ -72,7 +72,7 @@ class MyanimelistCharacterSpider(MyanimelistAnimeSpider):
             item["source"] = source.group(1)
 
         desc, bio = [], {}
-        for i in response.css("table td ::text"):
+        for i in response.css("table td::text"):
             text = i.get().strip()
             if not text:
                 continue

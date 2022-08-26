@@ -125,3 +125,26 @@ see: [requirements.txt](/requirements.txt)
 
    </details>
 
+1. **urbandictionary**</br>
+   | info |  |
+   |---|---|
+   | spider name | urbandictionary |
+   | source | http://www.urbandictionary.com/ |
+
+   <details>
+     <summary><i>output example</i></summary>
+
+      </br>
+
+      | id | text | meaning | example | author | date |
+      |---|---|---|---|---|---|
+      | 61580 | second breakfast | invented by hobbits, second breakfast is [...] | We'll just have time for second breakfast [...] | Sienna | March 17, 2003 |
+      | 349729 | munch | A low-pressure, social gathering at a [...] | Well, if you don't feel ready for a play [...] | Peter | November 14, 2003 |
+      | 739032 | AmeriKKKa | Cynical corruption of "America" (as in [...] | The establishment regime of AmeriKKKa just [...] | Disgruntled American | June 29, 2004 |
+      | 795231 | sweet nothing | a sweet nothing is a complementary statement [...] | He whispered sweet nothings into her ear [...] | Spencer | August 16, 2004 |
+      | 1017598 | Christofascist | Christian religious extremist. Often a [...] | James Dobson's Focus on the Family is a [...] | damncutekitty | January 24, 2005 |
+
+      _and more.._
+
+   </details>
+
