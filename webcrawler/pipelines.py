@@ -94,9 +94,9 @@ class database:
             v_type = self.get_column_type(v)
 
             if name != "id" or self.unique_keys[dbname] == "id":
-               metadata[name] = attr.ib(default=v_type().python_type())
+                metadata[name] = attr.ib(default=v_type().python_type())
             if name != "id":
-               columns.append(sa.Column(name, v_type))
+                columns.append(sa.Column(name, v_type))
 
         # extend data
         for k, v in self.columns[dbname].items():

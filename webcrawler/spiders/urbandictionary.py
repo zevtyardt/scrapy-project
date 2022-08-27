@@ -13,12 +13,12 @@ class UrbandictionarySpider(scrapy.Spider):
         for definition in response.css(".definition"):
             author, date = definition.css(".contributor ::text").getall()[1:]
             yield {
-              "id": definition.css("::attr(data-defid)").get(),
-              "text": "".join(definition.css(".word ::text").getall()),
-              "meaning": "".join(definition.css(".meaning ::text").getall()),
-              "example": "".join(definition.css(".example ::text").getall()).replace("\r", "\n"),
-              "author": author.strip(),
-              "date": date.strip()
+                "id": definition.css("::attr(data-defid)").get(),
+                "text": "".join(definition.css(".word ::text").getall()),
+                "meaning": "".join(definition.css(".meaning ::text").getall()),
+                "example": "".join(definition.css(".example ::text").getall()).replace("\r", "\n"),
+                "author": author.strip(),
+                "date": date.strip()
             }
 
         next_page = response.css("a[rel='next']::attr(href)").get()
