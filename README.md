@@ -24,10 +24,10 @@ see: [requirements.txt](/requirements.txt)
       | id | title | url | genre | thumbnail | japanese | seasons | producers | type | status | total_episode | score | duration | released_on | sinopsis | download_data |
       |---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|
       | 1 | Shingeki no Kyojin: The Final Season | https://kusonime.com/snk-s4-batch-subtitle- [...] | [ "Action", "Drama", "Fantasy", "Military", [...] | https://kusonime.com/wp- [...] | 進撃の巨人 The Final Season | Winter 2021 | Production I.G, Dentsu, Mainichi [...] | BD | Completed | 28 | 9.16 | 24 min. per ep. | Dec 07, 2020 | Shingeki no Kyojin: The Final Season | [ { "name": "Download Shingeki no Kyojin: [...] |
-      | 2 | Shikong Zhi Xi (Time Space Rift) | https://kusonime.com/shikong-zhi-xi-batch- [...] | [ "Action", "Anime ONA" ] | https://kusonime.com/wp- [...] | 时空之隙 | Anime ONA | B.CMAY PICTURES, bilibili | ONA | Completed | 13 | 6.49 | 21 min. per ep. | Apr 15, 2022 | Shikong Zhi Xi (Time Space Rift) | [ { "name": "Download Shikong Zhi Xi Batch [...] |
-      | 3 | Gaikotsu Kishi-sama Tadaima Isekai e Odekakechuu | https://kusonime.com/skeleton-knight-batch- [...] | [ "Action", "Fantasy", "Spring 2022" ] | https://kusonime.com/wp- [...] | 骸骨騎士様、只今異世界へお出掛け中 | Spring 2022 | Pony Canyon, AT-X, DAX Production, Docomo [...] | BD | Completed | 12 | 7.31 | 23 min. per ep. | Apr 07, 2022 | Gaikotsu Kishi-sama Tadaima Isekai e Odekakechuu | [ { "name": "Download Gaikotsu Kishi-sama [...] |
-      | 4 | Steamboy | https://kusonime.com/steamboy-bd-subtitle- [...] | [ "Action", "Adventure", "Drama", [...] | https://kusonime.com/wp- [...] | スチームボーイ | Anime Movie | Bandai Visual, Dentsu, TBS, Imagica, Bandai, [...] | Movie | Completed | 1 | 7.33 | 2 hr. 6 min. | Jul 17, 2004 | Steamboy | [ { "name": "Download Movie Steamboy BD [...] |
-      | 5 | Takt Op. Destiny | https://kusonime.com/takt-op-destiny-batch- [...] | [ "Action", "Fantasy", "Music", "Fall 2021" ] | https://kusonime.com/wp- [...] | takt op.Destiny | Fall 2021 | DeNA, Bandai Namco Arts | BD | Completed | 12 | 7.16 | 23 min. per ep. | Oct 06, 2021 | Takt Op. Destiny | [ { "name": "Download Takt Op. Destiny Batch [...] |
+      | 2 | Tekken: Bloodline | https://kusonime.com/tekken-bloodline-batch- [...] | [ "Action", "Martial Arts", "Anime ONA" ] | https://kusonime.com/wp- [...] | Tekken: Bloodline | Anime ONA | N/A | ONA | Completed | 6 | 6.58 | 25 min. per ep. | Aug 18, 2022 | Tekken: Bloodline | [ { "name": "Download Tekken: Bloodline [...] |
+      | 3 | Horimiya | https://kusonime.com/horimiya-la-2021-batch- [...] | [ "Comedy", "Romance", "School", "Shounen", [...] | https://kusonime.com/wp- [...] | ホリミヤ |  | TBS | TV Series | Completed | 7 | 7.90 (Mydramalist) | 30 min. per ep. | Feb 16, 2021 | Horimiya | [ { "name": "Download Horimiya Live Action [...] |
+      | 4 | Xiao Mo Tou Baolu La! (Busted! Darklord) | https://kusonime.com/xiao-mo-tou-baolu-la- [...] | [ "Comedy", "Anime ONA" ] | https://kusonime.com/wp- [...] | 小魔头暴露啦！ | Anime ONA | N/A | ONA | Completed | 26 | 6.38 | 8 min. per ep. | Jan 15, 2022 | Xiao Mo Tou Baolu La! (Busted! Darklord) | [ { "name": "Download Xiao Mo Tou Baolu La! [...] |
+      | 5 | Shikong Zhi Xi (Time Space Rift) | https://kusonime.com/shikong-zhi-xi-batch- [...] | [ "Action", "Anime ONA" ] | https://kusonime.com/wp- [...] | 时空之隙 | Anime ONA | B.CMAY PICTURES, bilibili | ONA | Completed | 13 | 6.49 | 21 min. per ep. | Apr 15, 2022 | Shikong Zhi Xi (Time Space Rift) | [ { "name": "Download Shikong Zhi Xi Batch [...] |
 
       _and more.._
 
@@ -46,11 +46,11 @@ see: [requirements.txt](/requirements.txt)
 
       | id | title | url | from_site | rank | score | user | date |
       |---|---|---|---|---|---|---|---|
-      | 32575723 | Demystifying the LFSR | https://www.moria.us/articles/demystifying- [...] | moria.us | 72 | 35 points | randkyp | 2022-08-24T06:50:09 |
-      | 32578683 | Timothy Leary's Mind Mirror (1985) | https://scalar.usc.edu/works/timothy-leary- [...] | usc.edu | 32 | 45 points | ArtWomb | 2022-08-24T12:45:55 |
-      | 32583151 | Hacking Photosynthesis | https://www.codonmag.com/p/hacking-photosynthesis | codonmag.com | 40 | 24 points | prostoalex | 2022-08-24T17:51:36 |
-      | 32583868 | Panic at the Library | [...] | laphamsquarterly.org | 17 | 16 points | drdee | 2022-08-24T18:39:06 |
-      | 32585830 | What Next? (2017) | https://graydon2.dreamwidth.org/253769.html | graydon2.dreamwidth.org | 19 | 5 points | dcminter | 2022-08-24T21:12:18 |
+      | 32575393 | Why do some humans love chili peppers? | https://www.sapiens.org/culture/chili- [...] | sapiens.org | 114 | 110 points | Petiver | 2022-08-24T05:53:54 |
+      | 32575668 | Things people blamed on bicycles | [...] | twitter.com/paulisci | 111 | 759 points | the-archivist | 2022-08-24T06:43:06 |
+      | 32575723 | Demystifying the LFSR | https://www.moria.us/articles/demystifying- [...] | moria.us | 84 | 37 points | randkyp | 2022-08-24T06:50:09 |
+      | 32578152 | Email Innovation Timeline [pdf] | [...] | computerhistory.org | 34 | 28 points | bookofjoe | 2022-08-24T11:55:04 |
+      | 32578683 | Timothy Leary's Mind Mirror (1985) | https://scalar.usc.edu/works/timothy-leary- [...] | usc.edu | 83 | 52 points | ArtWomb | 2022-08-24T12:45:55 |
 
       _and more.._
 
@@ -69,11 +69,11 @@ see: [requirements.txt](/requirements.txt)
 
       | id | title | url | synonyms | japanese | french | type | episodes | status | aired | premiered | broadcast | producers | licensors | studios | source | genres | theme | demographic | duration | rating | score | ranked | popularity | members | favorites | synopsis | german | spanish |
       |---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|
-      | 1 | Fullmetal Alchemist: Brotherhood | [...] | Hagane no Renkinjutsushi: Fullmetal [...] | 鋼の錬金術師 FULLMETAL ALCHEMIST | Fullmetal Alchemist Brotherhood | TV | 64 | Finished Airing | Apr 5, 2009 to Jul 4, 2010 | Spring 2009 | Sundays at 17:00 (JST) | [ "Aniplex", "Mainichi Broadcasting System", [...] | [ "Aniplex of America", "Funimation" ] | Bones | Manga | [ "Action", "Adventure", "Drama", "Fantasy" ] | [ "Military" ] | [ "Shounen" ] | 24 min. per ep. | R - 17+ (violence & profanity) | 9.13 | #1 | #3 | 2,963,304 | 206,685 | After a horrific alchemy experiment goes [...] |  |  |
-      | 2 | Fruits Basket: The Final Season | [...] | Fruits Basket 3rd Season, Fruits Basket [...] | フルーツバスケット The Final | Fruits Basket Saison 3 | TV | 13 | Finished Airing | Apr 6, 2021 to Jun 29, 2021 | Spring 2021 | Tuesdays at 01:30 (JST) | [ "8PAN", "Avex Pictures", "Hakusensha", [...] | Funimation | TMS Entertainment | Manga | [ "Drama", "Romance", "Supernatural" ] |  | [ "Shoujo" ] | 23 min. per ep. | PG-13 - Teens 13 or older | 9.03 | #10 | #512 | 369,915 | 17,102 | Hundreds of years ago, the Chinese Zodiac [...] | Fruits Basket Staffel 3 | Fruits Basket: The Final Season |
-      | 3 | Gintama Season 5 | https://myanimelist.net/anime/34096/Gintama | Gintama (2017) | 銀魂。 |  | TV | 12 | Finished Airing | Jan 9, 2017 to Mar 27, 2017 | Winter 2017 | Mondays at 01:35 (JST) | [ "Aniplex", "Dentsu", "Shueisha", "TV Tokyo" ] | [ "None found,", "add some" ] | Bandai Namco Pictures | Manga | [ "Action", "Comedy", "Sci-Fi" ] | [ "Gag Humor", "Historical", "Parody", "Samurai" ] | [ "Shounen" ] | 24 min. per ep. | PG-13 - Teens 13 or older | 8.99 | #12 | #737 | 275,850 | 2,541 | After joining the resistance against the [...] |  |  |
-      | 4 | Gintama: Enchousen | [...] | Gintama' (2012), Gintama' Overdrive, Kintama | 銀魂' 延長戦 |  | TV | 13 | Finished Airing | Oct 4, 2012 to Mar 28, 2013 | Fall 2012 | Thursdays at 18:00 (JST) | [ "Aniplex", "Dentsu", "Miracle Bus", [...] | [ "None found,", "add some" ] | Sunrise | Manga | [ "Action", "Comedy", "Sci-Fi" ] | [ "Gag Humor", "Historical", "Parody", "Samurai" ] | [ "Shounen" ] | 24 min. per ep. | PG-13 - Teens 13 or older | 9.04 | #8 | #697 | 289,102 | 2,854 | While Gintoki Sakata was away, the Yorozuya [...] |  |  |
-      | 5 | Gintama Season 4 | https://myanimelist.net/anime/28977/Gintama° | Gintama' (2015) | 銀魂° | Gintama Saison 4 | TV | 51 | Finished Airing | Apr 8, 2015 to Mar 30, 2016 | Spring 2015 | Wednesdays at 18:00 (JST) | [ "Aniplex", "Dentsu", "TV Tokyo" ] | [ "Crunchyroll", "Funimation" ] | Bandai Namco Pictures | Manga | [ "Action", "Comedy", "Sci-Fi" ] | [ "Gag Humor", "Historical", "Parody", "Samurai" ] | [ "Shounen" ] | 24 min. per ep. | PG-13 - Teens 13 or older | 9.08 | #3 | #338 | 551,077 | 14,879 | Gintoki, Shinpachi, and Kagura return as the [...] | Gintama Season 4 | Gintama Temporada 4 |
+      | 1 | Fullmetal Alchemist: Brotherhood | [...] | Hagane no Renkinjutsushi: Fullmetal [...] | 鋼の錬金術師 FULLMETAL ALCHEMIST | Fullmetal Alchemist Brotherhood | TV | 64 | Finished Airing | Apr 5, 2009 to Jul 4, 2010 | Spring 2009 | Sundays at 17:00 (JST) | [ "Aniplex", "Mainichi Broadcasting System", [...] | [ "Aniplex of America", "Funimation" ] | Bones | Manga | [ "Action", "Adventure", "Drama", "Fantasy" ] | [ "Military" ] | [ "Shounen" ] | 24 min. per ep. | R - 17+ (violence & profanity) | 9.13 | #1 | #3 | 2,963,531 | 206,712 | After a horrific alchemy experiment goes [...] |  |  |
+      | 2 | Gintama Season 5 | https://myanimelist.net/anime/34096/Gintama | Gintama (2017) | 銀魂。 |  | TV | 12 | Finished Airing | Jan 9, 2017 to Mar 27, 2017 | Winter 2017 | Mondays at 01:35 (JST) | [ "Aniplex", "Dentsu", "Shueisha", "TV Tokyo" ] | [ "None found,", "add some" ] | Bandai Namco Pictures | Manga | [ "Action", "Comedy", "Sci-Fi" ] | [ "Gag Humor", "Historical", "Parody", "Samurai" ] | [ "Shounen" ] | 24 min. per ep. | PG-13 - Teens 13 or older | 8.99 | #12 | #737 | 275,880 | 2,540 | After joining the resistance against the [...] |  |  |
+      | 3 | March Comes In Like A Lion 2nd Season | https://myanimelist.net/anime/35180/3- [...] | Sangatsu no Lion Second Season | 3月のライオン 第2シリーズ | March Comes in like a Lion Saison 2 | TV | 22 | Finished Airing | Oct 14, 2017 to Mar 31, 2018 | Fall 2017 | Saturdays at 23:00 (JST) | [ "Aniplex", "Asmik Ace", "Dentsu", [...] | Aniplex of America | Shaft | Manga | [ "Drama", "Slice of Life" ] | [ "Childcare", "Iyashikei", "Strategy Game" ] | [ "Seinen" ] | 25 min. per ep. | PG-13 - Teens 13 or older | 8.95 | #13 | #532 | 360,008 | 14,379 | Now in his second year of high school, Rei [...] | March Come in Like a Lion Staffel 2 | March Comes in like a Lion Temporada 2 |
+      | 4 | Gintama | https://myanimelist.net/anime/918/Gintama | Gin Tama, Silver Soul, Yorinuki Gintama-san | 銀魂 |  | TV | 201 | Finished Airing | Apr 4, 2006 to Mar 25, 2010 | Spring 2006 | Thursdays at 18:00 (JST) | [ "Aniplex", "Audio Highs", "Dentsu", [...] | [ "Crunchyroll", "Sentai Filmworks" ] | Sunrise | Manga | [ "Action", "Comedy", "Sci-Fi" ] | [ "Gag Humor", "Historical", "Parody", "Samurai" ] | [ "Shounen" ] | 24 min. per ep. | PG-13 - Teens 13 or older | 8.95 | #14 | #134 | 962,349 | 55,505 | Edo is a city that was home to the vigor and [...] |  |  |
+      | 5 | Gintama Season 4 | https://myanimelist.net/anime/28977/Gintama° | Gintama' (2015) | 銀魂° | Gintama Saison 4 | TV | 51 | Finished Airing | Apr 8, 2015 to Mar 30, 2016 | Spring 2015 | Wednesdays at 18:00 (JST) | [ "Aniplex", "Dentsu", "TV Tokyo" ] | [ "Crunchyroll", "Funimation" ] | Bandai Namco Pictures | Manga | [ "Action", "Comedy", "Sci-Fi" ] | [ "Gag Humor", "Historical", "Parody", "Samurai" ] | [ "Shounen" ] | 24 min. per ep. | PG-13 - Teens 13 or older | 9.08 | #3 | #338 | 551,114 | 14,885 | Gintoki, Shinpachi, and Kagura return as the [...] | Gintama Season 4 | Gintama Temporada 4 |
 
       _and more.._
 
@@ -92,11 +92,11 @@ see: [requirements.txt](/requirements.txt)
 
       | id | name | url | japanese | source | favorites | biodata | description |
       |---|---|---|---|---|---|---|---|
-      | 1 | Lelouch Lamperouge | [...] | ルルーシュ・ランペルージ | Code Geass: Hangyaku no Lelouch | 157,590 | { "age": "17 (first season), 18 (second [...] | Lelouch vi Britannia (ルルーシュ・ヴィ・ブリタニア, [...] |
-      | 2 | Edward Elric | https://myanimelist.net/character/11/Edward_Elric | エドワード・エルリック | Fullmetal Alchemist | 83,474 | { "age": "15-16 (series), 18 (movie, end of [...] | Winry Rockbell Pinako Rockbell Izumi Curtis [...] |
-      | 3 | Luffy Monkey D. | [...] | モンキー・D・ルフィ | One Piece | 120,217 | { "age": "17; 19", "birthdate": "May 5, [...] | Bounty: Luffy is the captain of the Straw [...] |
-      | 4 | Levi | https://myanimelist.net/character/45627/Levi | リヴァイ | Shingeki no Kyojin | 131,653 | { "birthday": "December 25", "height": "160 [...] | Levi is known as humanity's most powerful [...] |
-      | 5 | Killua Zoldyck | [...] | キルア=ゾルディック | Hunter x Hunter | 88,978 | { "age": "12 (Beginning), 14-15 (Current)", [...] | , Hunter Abilities: Killua Zoldyck is the [...] |
+      | 1 | Lelouch Lamperouge | [...] | ルルーシュ・ランペルージ | Code Geass: Hangyaku no Lelouch | 157,607 | { "age": "17 (first season), 18 (second [...] | Lelouch vi Britannia (ルルーシュ・ヴィ・ブリタニア, [...] |
+      | 2 | Levi | https://myanimelist.net/character/45627/Levi | リヴァイ | Shingeki no Kyojin | 131,669 | { "birthday": "December 25", "height": "160 [...] | Levi is known as humanity's most powerful [...] |
+      | 3 | Luffy Monkey D. | [...] | モンキー・D・ルフィ | One Piece | 120,240 | { "age": "17; 19", "birthdate": "May 5, [...] | Bounty: Luffy is the captain of the Straw [...] |
+      | 4 | Guts | https://myanimelist.net/character/422/Guts | ガッツ | Kenpuu Denki Berserk | 68,459 | { "eyes": "brown", "hair": "black", [...] | Weight: Guts is the protagonist of the [...] |
+      | 5 | Kurisu Makise | [...] | 牧瀬 紅莉栖 | Steins;Gate | 61,763 | { "age": "18", "birthdate": "July 25 (Leo)", [...] | The female protagonist. Kurisu is a research [...] |
 
       _and more.._
 
@@ -113,13 +113,13 @@ see: [requirements.txt](/requirements.txt)
 
       </br>
 
-      | id | title | url | japanese | type | volumes | chapters | status | published | genres | themes | demographic | serialization | authors | score | ranked | popularity | members | favorites | synopsis | french | german | spanish |
-      |---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|
-      | 1 | Vagabond | https://myanimelist.net/manga/656/Vagabond | バガボンド | Manga | 37 | 327 | On Hiatus | Sep 3, 1998 to May 21, 2015 | [ "Action", "Adventure", "Award Winning" ] | [ "Historical", "Samurai" ] | [ "Seinen" ] | Morning | [ "(Story & Art),", "(Story)", "Inoue, [...] | 9.19 | #4 | #16 | 290,521 | 30,818 | In 16th-century Japan, Shinmen Takezou is a [...] |  |  |  |
-      | 2 | One Piece | https://myanimelist.net/manga/13/One_Piece | ONE PIECE | Manga | Unknown | Unknown | Publishing | Jul 22, 1997 to ? | [ "Action", "Adventure", "Fantasy" ] |  | [ "Shounen" ] | Shounen Jump (Weekly) | [ "(Story & Art)", "Oda, Eiichiro" ] | 9.20 | #3 | #3 | 510,297 | 101,074 | Gol D. Roger, a man referred to as the [...] |  |  |  |
-      | 3 | Berserk | https://myanimelist.net/manga/2/Berserk | ベルセルク | Manga | Unknown | Unknown | Publishing | Aug 25, 1989 to ? | [ "Action", "Adventure", "Award Winning", [...] | [ "Gore", "Military", "Mythology", [...] | [ "Seinen" ] | Young Animal | [ "(Art)", "(Story & Art),", "Miura, [...] | 9.46 | #1 | #2 | 561,563 | 105,709 | Berserk: The Prototype |  |  |  |
-      | 4 | Monster | https://myanimelist.net/manga/1/Monster | MONSTER | Manga | 18 | 162 | Finished | Dec 5, 1994 to Dec 20, 2001 | [ "Award Winning", "Drama", "Mystery" ] | [ "Adult Cast", "Psychological" ] | [ "Seinen" ] | Big Comic Original | [ "(Story & Art)", "Urasawa, Naoki" ] | 9.13 | #5 | #30 | 196,340 | 17,137 | Kenzou Tenma, a renowned Japanese [...] |  |  |  |
-      | 5 | Real | https://myanimelist.net/manga/657/Real | リアル | Manga | Unknown | Unknown | Publishing | 1999 to ? | [ "Drama", "Sports" ] | [ "Psychological", "Team Sports" ] | [ "Seinen" ] | Young Jump | [ "(Story & Art)", "Inoue, Takehiko" ] | 8.90 | #20 | #186 | 67,455 | 2,927 | Tomomi Nomiya, former captain of his high [...] |  |  |  |
+      | id | title | url | synonyms | japanese | type | volumes | chapters | status | published | genres | themes | demographic | serialization | authors | score | ranked | popularity | members | favorites | synopsis | french | german | spanish |
+      |---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|
+      | 1 | Berserk | https://myanimelist.net/manga/2/Berserk | Berserk: The Prototype | ベルセルク | Manga | Unknown | Unknown | Publishing | Aug 25, 1989 to ? | [ "Action", "Adventure", "Award Winning", [...] | [ "Gore", "Military", "Mythology", [...] | [ "Seinen" ] | Young Animal | [ "(Art)", "(Story & Art),", "Miura, [...] | 9.46 | #1 | #2 | 561,639 | 105,732 | Guts, a former mercenary now known as the [...] |  |  |  |
+      | 2 | Fullmetal Alchemist | [...] | Full Metal Alchemist, Hagane no [...] | 鋼の錬金術師 | Manga | 27 | 116 | Finished | Jul 12, 2001 to Sep 11, 2010 | [ "Action", "Adventure", "Award Winning", [...] | [ "Military" ] | [ "Shounen" ] | Shounen Gangan | [ "(Story & Art)", "Arakawa, Hiromu" ] | 9.04 | #7 | #18 | 266,618 | 28,664 | Alchemists are knowledgeable and naturally [...] |  |  |  |
+      | 3 | Grand Blue Dreaming | https://myanimelist.net/manga/70345/Grand_Blue |  | ぐらんぶる | Manga | Unknown | Unknown | Publishing | Apr 7, 2014 to ? | [ "Comedy" ] |  | [ "Seinen" ] | good! Afternoon | [ "(Art)", "(Story),", "Inoue, Kenji", [...] | 9.03 | #9 | #50 | 150,741 | 15,337 | Among the seaside town of Izu's ocean waves [...] |  |  |  |
+      | 4 | キングダム | https://myanimelist.net/manga/16765/Kingdom |  |  | Manga | Unknown | Unknown | Publishing | Jan 26, 2006 to ? | [ "Action", "Award Winning" ] | [ "Historical", "Military" ] | [ "Seinen" ] | Young Jump | [ "(Story & Art)", "Hara, Yasuhisa" ] | 8.98 | #11 | #58 | 143,187 | 12,887 | During the Warring States period in China, [...] |  |  |  |
+      | 5 | One Piece | https://myanimelist.net/manga/13/One_Piece |  | ONE PIECE | Manga | Unknown | Unknown | Publishing | Jul 22, 1997 to ? | [ "Action", "Adventure", "Fantasy" ] |  | [ "Shounen" ] | Shounen Jump (Weekly) | [ "(Story & Art)", "Oda, Eiichiro" ] | 9.20 | #3 | #3 | 510,370 | 101,091 | Gol D. Roger, a man referred to as the [...] |  |  |  |
 
       _and more.._
 
@@ -136,13 +136,13 @@ see: [requirements.txt](/requirements.txt)
 
       </br>
 
-      | id | name | url | image_url | given_name | birthday | member_favorites | description | alternate_names | height | weight | blood_type | hometown | hobbies | skills | pets | favourite_animal | favourite_mangaka | favourite_music | debut_role | dislikes | places_he_wants_to_visit | agency |
-      |---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|
-      | 1 | Miyazaki, Hayao | https://myanimelist.net/people/1870/Hayao_Miyazaki | [...] | 駿 | Jan 5, 1941 | 66,984 | Miyazaki, the second of four brothers, was [...] |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |
-      | 2 | Araki, Hirohiko | https://myanimelist.net/people/2619/Hirohiko_Araki | [...] | 飛呂彦 | Sendai, Miyagi Prefecture, Japan | 39,092 | Hirohiko Araki left school before graduation [...] | Araki Toshiyuki, 荒木 利之 | 169.5 cm | 61 kg | B |  |  |  |  |  |  |  |  |  |  |  |
-      | 3 | Kamiya, Hiroshi | https://myanimelist.net/people/118/Hiroshi_Kamiya | [...] | 浩史 | Matsudo, Chiba Prefecture, Japan | 103,275 | Kamiya Hiroshi went to Aoni Juku and decided [...] | ヒロC, HiroC, Kamiyan | 167 cm (5'6") | 53 kg (117 lbs) | A |  |  |  |  |  |  |  |  |  |  |  |
-      | 4 | Miyano, Mamoru | https://myanimelist.net/people/65/Mamoru_Miyano | [...] | 真守 | Jun 8, 1983 | 86,738 | Mamoru Miyano won Best Voice Actor award in [...] |  | 182 cm | 70 kg | B | Saitama, Japan | singing, soccer | harmonica, harp |  |  |  |  |  |  |  |  |
-      | 5 | Takahashi, Rie | https://myanimelist.net/people/34785/Rie_Takahashi | [...] | 李依 | Saitama Prefecture, Japan | 46,624 | She is apart of the seiyuu unit Earphones, [...] | Rieri, Rii-chan |  |  |  |  |  |  |  |  |  |  |  |  |  |  |
+      | id | name | url | image_url | given_name | birthday | member_favorites | hometown | blood_type | favourite_animal | favourite_mangaka | favourite_music | description | alternate_names | height | weight | hobbies | sports | specialty | skills |
+      |---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|
+      | 1 | Oda, Eiichiro | https://myanimelist.net/people/1881/Eiichiro_Oda | [...] | 栄一郎 | Jan 1, 1975 | 47,774 | Kumamoto, Japan | A | Big gentle dogs | Akira Toriyama | '70s soul music | Favourite Real-Life Pirate: Edward Teach [...] |  |  |  |  |  |  |  |
+      | 2 | Takahashi, Rie | https://myanimelist.net/people/34785/Rie_Takahashi | [...] | 李依 | Saitama Prefecture, Japan | 46,629 |  |  |  |  |  | She is apart of the seiyuu unit Earphones, [...] | Rieri, Rii-chan |  |  |  |  |  |  |
+      | 3 | Miyazaki, Hayao | https://myanimelist.net/people/1870/Hayao_Miyazaki | [...] | 駿 | Jan 5, 1941 | 66,988 |  |  |  |  |  | Miyazaki, the second of four brothers, was [...] |  |  |  |  |  |  |  |
+      | 4 | Kamiya, Hiroshi | https://myanimelist.net/people/118/Hiroshi_Kamiya | [...] | 浩史 | Matsudo, Chiba Prefecture, Japan | 103,279 |  | A |  |  |  | Kamiya Hiroshi went to Aoni Juku and decided [...] | ヒロC, HiroC, Kamiyan | 167 cm (5'6") | 53 kg (117 lbs) |  |  |  |  |
+      | 5 | Hanazawa, Kana | https://myanimelist.net/people/185/Kana_Hanazawa | [...] | 香菜 | Feb 25, 1989 | 98,748 | Tokyo, Japan | AB |  |  |  | Kana Hanazawa used to be a junior idol in [...] | HanaKana, KanaHana | 156 cm |  |  |  |  |  |
 
       _and more.._
 
@@ -164,8 +164,8 @@ see: [requirements.txt](/requirements.txt)
       | 61580 | second breakfast | invented by hobbits, second breakfast is [...] | We'll just have time for second breakfast [...] | Sienna | March 17, 2003 |
       | 349729 | munch | A low-pressure, social gathering at a [...] | Well, if you don't feel ready for a play [...] | Peter | November 14, 2003 |
       | 795231 | sweet nothing | a sweet nothing is a complementary statement [...] | He whispered sweet nothings into her ear [...] | Spencer | August 16, 2004 |
-      | 5168051 | FOBI | Fear of Being Involved/Included/Invited | The antithesis to FOMO. FOBI refers to [...] | papillonnosilla | August 19, 2010 |
-      | 7808664 | Douchergheist | (Noun) A spirit that embodies pure douche [...] | "Gayrod used to be cool but he got possessed [...] | SaxeGotha | June 26, 2014 |
+      | 1607410 | have a cow | A frequent utterance of Bart Simpson, "Don't [...] | Jimmy Joe had a cow when he learned that his [...] | MsLi | January 29, 2006 |
+      | 1921133 | google earthing | What I do when I have nothing else to do. I [...] | I have some time to kill, I think I will go [...] | kginatl | August 16, 2006 |
 
       _and more.._
 
@@ -182,15 +182,26 @@ see: [requirements.txt](/requirements.txt)
 
       </br>
 
-      | id | title | alternative_title | studios | type | episodes | year | season | average_rating | rank | synopsis | notes | tags | url |
-      |---|---|---|---|---|---|---|---|---|---|---|---|---|---|
-      | 1 | Demon Slayer: Kimetsu no Yaiba - [...] | Kimetsu no Yaiba: Yuukaku-hen | ufotable | TV | 11 eps | 2021 - 2022 | Fall 2021 | 4.6 out of 5 from 15,915 votes | #1 | Tanjiro and his friends accompany the [...] | Source: Viz | [ "Action", "Adventure", "Fantasy", [...] | https://www.anime-planet.com/anime/demon- [...] |
-      | 2 | SPY x FAMILY |  | WIT Studio | TV | 12 eps | 2022 | Spring 2022 | 4.564 out of 5 from 15,045 votes | #4 | Master spy Twilight is the best at what he [...] | Source: VIZ | [ "Action", "Comedy", "Shounen", [...] | https://www.anime-planet.com/anime/spy-x-family |
-      | 3 | Kaguya-sama: Love is War - Ultra Romantic | Kaguya-sama wa Kokurasetai: Ultra Romantic | A-1 Pictures | TV | 13 eps | 2022 | Spring 2022 | 4.552 out of 5 from 5,216 votes | #6 | The third season of |  | [ "Comedy", "Drama", "Romance", "Seinen", [...] | https://www.anime-planet.com/anime/kaguya- [...] |
-      | 4 | Jujutsu Kaisen |  | MAPPA | TV | 24 eps | 2020 - 2021 | Fall 2020 | 4.539 out of 5 from 41,600 votes | #8 | Although Yuji Itadori looks like your [...] | Source: Viz | [ "Action", "Horror", "Shounen", "Body [...] | https://www.anime-planet.com/anime/jujutsu-kaisen |
-      | 5 | Fruits Basket the Final Season | Fruits Basket the Final | TMS Entertainment | TV | 13 eps | 2021 | Spring 2021 | 4.598 out of 5 from 7,480 votes | #2 | The final arc of |  | [ "Drama", "Fantasy", "Romance", "Shoujo", [...] | https://www.anime-planet.com/anime/fruits- [...] |
+      | id | title | alternative_title | studios | type | episodes | year | season | average_rating | rank | synopsis | notes | tags | content_warnings | url |
+      |---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|
+      | 1 | Demon Slayer: Kimetsu no Yaiba - [...] | Kimetsu no Yaiba: Yuukaku-hen | ufotable | TV | 11 eps | 2021 - 2022 | Fall 2021 | 4.6 out of 5 from 15,932 votes | #1 | Tanjiro and his friends accompany the [...] | Source: Viz | [ "Action", "Adventure", "Fantasy", [...] | [ "Explicit Violence" ] | https://www.anime-planet.com/anime/demon- [...] |
+      | 2 | Haikyuu!! Second Season |  | Production I.G | TV | 25 eps | 2015 - 2016 | Fall 2015 | 4.509 out of 5 from 34,240 votes | #13 | After losing to Aoba Johsai at the Inter- [...] | Source: Crunchyroll | [ "Shounen", "Sports", "School Club", [...] |  | https://www.anime-planet.com/anime/haikyuu- [...] |
+      | 3 | Haikyuu!! Karasuno High School vs [...] | Haikyuu!! Karasuno Koukou vs Shiratorizawa [...] | Production I.G | TV | 10 eps | 2016 | Fall 2016 | 4.528 out of 5 from 27,284 votes | #9 | Picking up where the second season ended, [...] | Source: Crunchyroll | [ "Shounen", "Sports", "Animeism", "School [...] |  | https://www.anime-planet.com/anime/haikyuu- [...] |
+      | 4 | Demon Slayer: Kimetsu no Yaiba Movie - Mugen Train | Kimetsu no Yaiba Movie: Mugen Ressha-hen | ufotable | Movie | 1 ep x 117 min | 2020 |  | 4.522 out of 5 from 24,454 votes | #10 | Tanjirou and the group have completed their [...] | Source: Official Site | [ "Action", "Drama", "Fantasy", "Shounen", [...] | [ "Mature Themes,", "Suicide,", "Violence" ] | https://www.anime-planet.com/anime/demon- [...] |
+      | 5 | Violet Evergarden Movie |  | Kyoto Animation | Movie | 1 ep x 140 min | 2020 |  | 4.501 out of 5 from 6,270 votes | #15 | As the world moves on from the war and [...] | Source: Netflix | [ "Drama", "Melancholy", "War", "Based on a [...] | [ "Violence" ] | https://www.anime-planet.com/anime/violet- [...] |
 
       _and more.._
 
    </details>
+
+
+## Contributing
+
+Contributions are what make the open source community such an amazing place to learn, inspire, and create. Any contributions you make are greatly appreciated.
+
+1. Fork the Project
+2. Create your Feature Branch (`git checkout -b feature/AmazingFeature`)
+3. Commit your Changes (`git commit -m 'feat: Add some AmazingFeature'`)
+4. Push to the Branch (`git push origin feature/AmazingFeature`)
+5. Open a Pull Request
 
