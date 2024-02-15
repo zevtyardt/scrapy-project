@@ -1,5 +1,5 @@
 attr==0.3.2
 itemadapter==0.7.0
 rich==12.5.1
-scrapy==2.6.2
+scrapy==2.11.1
 SQLAlchemy==1.4.40
